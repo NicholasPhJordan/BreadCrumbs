@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class LightBehaviour : MonoBehaviour
 {
-    //this will change from false to true if the lighting power up is false
-    bool powerLighting = false;
+    [Tooltip("this will change from false to true if the lighting power up is false")]
+    [SerializeField]
+    private bool powerLighting;
 
+    //this will grab the lighting comonent from an object to allow change 
     private Light _light;
 
     // Start is called before the first frame update
@@ -20,7 +22,11 @@ public class LightBehaviour : MonoBehaviour
     {
         if(powerLighting == false)
         {
-            _light.color = Color.Lerp(new Color(255, 220, 189, 255), new Color(0, 0, 0, 255), Time.deltaTime / 30);
+            _light.color = Color.HSVToRGB(75, 75, 255);
+        }
+        else
+        {
+            _light.color = Color.HSVToRGB(0, 0, 255);
         }
     }
 }
