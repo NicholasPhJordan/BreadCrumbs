@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class BreadCrumbBehavior : MonoBehaviour
 {
-    float score;
+    [Tooltip("The amount each collectable is worth")]
+    public float scoreAmount;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        scoreAmount = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    //Collision with the "Player" will destroy the object and update the score
+    void OnTriggerEnter(Collider other)
     {
-        
+        if (other.tag == "Player")
+        {
+            ScoringSystem.addScore += scoreAmount;
+            Destroy(gameObject);
+        }
     }
 }
