@@ -22,11 +22,11 @@ public class LightBehaviour : MonoBehaviour
     {
         if(powerLighting == false)
         {
-            _light.color = Color.HSVToRGB(75, 75, 255);
+            _light.color -= (Color.white / 2.0f) * Time.deltaTime;
         }
-        else
+        else if (powerLighting == true)
         {
-            //_light.color = Color.HSVToRGB(0, 0, 255);
+            _light.color -= (Color.black / 2.0f) * Time.deltaTime;
         }
     }
 }
