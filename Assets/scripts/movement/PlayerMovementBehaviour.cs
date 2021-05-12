@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ public class PlayerMovementBehaviour : MonoBehaviour
     private Rigidbody _rigidbody;
     [Tooltip("A reference to the CharacterController to move.")]
     public CharacterController characterController;
+    private Vector3 _velocity;
 
     // Start is called before the first frame update
     void Start()
@@ -19,40 +21,19 @@ public class PlayerMovementBehaviour : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Move(Vector3 direction)
     {
-        //changes x and going foreward
-        if (Input.GetButton("W"))
-        {
-            //this will create and give value to move
-            float move = _moveSpeed * 5;
-            //this will move the position of the _rigidbody
-            _rigidbody.position += transform.forward * Time.deltaTime * move;
-            //this will allow the player to move in the direction its facing
-            _rigidbody.AddRelativeForce(new Vector3(-move, 0, 0), ForceMode.Impulse);
-        }
-        //rotates y
-        else if (Input.GetButton("A"))
-        {
-            //this will rotate the _rigidbody to the left
-            transform.Rotate(new Vector3(0, -_moveSpeed, 0) * Time.deltaTime * 100, Space.World);
-        }
-        //changes x and going backwards 
-        else if (Input.GetButton("S"))
-        {
-            //this will create and give value to move
-            float move = _moveSpeed * 5;
-            //this will move the position of the _rigidbody
-            _rigidbody.position -= transform.forward * Time.deltaTime * move;
-            //this will allow the player to move in the direction its facing
-            _rigidbody.AddRelativeForce(new Vector3(move, 0, 0), ForceMode.Impulse);
-        }
-        //rotates y
-        else if (Input.GetButton("D"))
-        {
-            //this will rotate the _rigidbody to the right
-            transform.Rotate(new Vector3(0, _moveSpeed, 0) * Time.deltaTime * 100, Space.World);
-        }
+        _velocity = direction * _moveSpeed * Time.deltaTime;
+    }
+
+    internal void Move(object moveDirection)
+    {
+        throw new NotImplementedException();
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        _rigidbody.MovePosition(transform.position + _velocity);
     }
 }

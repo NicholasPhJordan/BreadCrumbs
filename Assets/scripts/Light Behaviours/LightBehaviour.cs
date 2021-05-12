@@ -26,7 +26,7 @@ public class LightBehaviour : MonoBehaviour
         }
         else
         {
-            _light.color = Color.HSVToRGB(0, 0, 255);
+            //_light.color = Color.HSVToRGB(0, 0, 255);
         }
     }
 }
