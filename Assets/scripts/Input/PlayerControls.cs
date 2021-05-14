@@ -73,7 +73,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""Up"",
+                    ""name"": ""left"",
                     ""id"": ""b492328d-74a8-4eef-9191-440db06b0a91"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
@@ -84,7 +84,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""Down"",
+                    ""name"": ""right"",
                     ""id"": ""203d7a09-df83-45b6-881d-dc831d851382"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
