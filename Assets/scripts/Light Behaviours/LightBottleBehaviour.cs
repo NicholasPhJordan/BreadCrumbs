@@ -7,9 +7,11 @@ public class LightBottleBehaviour : MonoBehaviour
     [Tooltip("this will grab two of the spot lighting")]
     [SerializeField]
     private Light _light1;
-    public int range;
     bool _onCollision = false;
     float timeLeft = 30.0f;
+    float a = 35;
+    float b = 50;
+    float t = 1;
 
     private Rigidbody _rigidbody;
 
@@ -44,7 +46,7 @@ public class LightBottleBehaviour : MonoBehaviour
     //this is the function for light to change
     void LightChange()
     {
-        _light1.range = range;
+        _light1.range = Mathf.Lerp(a, b, t);
     }
 
     private void Update()
@@ -52,7 +54,7 @@ public class LightBottleBehaviour : MonoBehaviour
         timeLeft -= Time.deltaTime;
         if (timeLeft < 0)
         {
-            _light1.range = 35;
+            _light1.range = Mathf.Lerp(b, a, t);
         }
     }
 }

@@ -335,7 +335,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _light1: {fileID: 1669603243}
-  range: 100
 --- !u!1 &937371616
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,6 +635,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerLighting: 0
+  a: 1
+  b: 0
+  t: 1
 --- !u!108 &1570388111
 Light:
   m_ObjectHideFlags: 0
