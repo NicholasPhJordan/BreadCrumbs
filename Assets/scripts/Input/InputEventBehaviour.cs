@@ -17,6 +17,6 @@ public class InputEventBehaviour : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        _movement.Move(context.ReadValue<Vector2>());
+        _movement.Move(context.ReadValue<Vector3>());
     }
 }
