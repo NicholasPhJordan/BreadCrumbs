@@ -23,7 +23,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""type"": ""Value"",
                     ""id"": ""43180b3e-95ed-4d19-a8a6-314e11b86288"",
                     ""expectedControlType"": """",
-                    ""processors"": """",
+                    ""processors"": ""ScaleVector3(y=0)"",
                     ""interactions"": """"
                 }
             ],
