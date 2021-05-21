@@ -12,7 +12,7 @@ public class LightBottleBehaviour : MonoBehaviour
     public float timeLeftReset = 30.0f;
     public float a = 35;
     public float b = 50;
-    public float t = 1;
+    public float t = 10;
     bool collided = false;
 
     private Rigidbody _rigidbody;
