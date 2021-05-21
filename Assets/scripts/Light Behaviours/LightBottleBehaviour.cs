@@ -8,10 +8,12 @@ public class LightBottleBehaviour : MonoBehaviour
     [SerializeField]
     private Light _light1;
     bool _onCollision = false;
-    float timeLeft = 30.0f;
-    float a = 35;
-    float b = 50;
-    float t = 1;
+    public float timeLeft = 30.0f;
+    public float timeLeftReset = 30.0f;
+    public float a = 35;
+    public float b = 50;
+    public float t = 1;
+    bool collided = false;
 
     private Rigidbody _rigidbody;
 
@@ -27,34 +29,21 @@ public class LightBottleBehaviour : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("LightingBottle"))
         {
-            LightChange();
+            _light1.range = Mathf.Lerp(a, b, t);
+            collided = true;
         }
-    }
-
-    //this is so that it will 
-    private IEnumerator Pause(int p)
-    {
-        Time.timeScale = 0.1f;
-        float pauseEndTime = Time.realtimeSinceStartup + 1;
-        while (Time.realtimeSinceStartup < pauseEndTime)
-        {
-            yield return 0;
-        }
-        Time.timeScale = 1;
-    }
-
-    //this is the function for light to change
-    void LightChange()
-    {
-        _light1.range = Mathf.Lerp(a, b, t);
     }
 
     private void Update()
     {
-        timeLeft -= Time.deltaTime;
+        if (collided == true)
+            timeLeft -= Time.deltaTime;
+
         if (timeLeft < 0)
         {
             _light1.range = Mathf.Lerp(b, a, t);
+            timeLeft = timeLeftReset;
+            collided = false;
         }
     }
 }

@@ -37,5 +37,6 @@ public class InputDelegateBehaviour : MonoBehaviour
         //Makes it move via X
         Vector3 directionMove = new Vector3(_playerControls.Player.Movement.ReadValue<Vector2>().x, 0, _playerControls.Player.Movement.ReadValue<Vector2>().y);
         _playerMovement.Move(directionMove);
+        
     }
 }
