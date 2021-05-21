@@ -29,13 +29,20 @@ public class EnemyChase : MonoBehaviour
         //Get a reference to the attached rigidbody
         _rigidbody = GetComponent<Rigidbody>();
         _agent = GetComponent<NavMeshAgent>();
-    }
+
+        
+}
 
     private void FixedUpdate()
     {
         //If a target hasn't been set return
         if (!_target)
             return;
+
+        //if ()
+        //{
+
+        //}
 
         _agent.SetDestination(_target.transform.position);
     }
