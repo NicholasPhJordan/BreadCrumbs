@@ -10,6 +10,8 @@ public class EnemyChase : MonoBehaviour
     [SerializeField]
     private GameObject _target;
     private NavMeshAgent _agent;
+    [SerializeField]
+    private float speedModifier;
 
     public GameObject Target
     {
@@ -31,7 +33,7 @@ public class EnemyChase : MonoBehaviour
         _agent = GetComponent<NavMeshAgent>();
 
         
-}
+    }
 
     private void FixedUpdate()
     {
@@ -39,10 +41,13 @@ public class EnemyChase : MonoBehaviour
         if (!_target)
             return;
 
-        //if ()
-        //{
+        if (_agent.remainingDistance < 5 && _agent.speed > 1)
+        {
+            _agent.speed -= speedModifier;
 
-        //}
+            if (_agent.speed < 1)
+                _agent.speed = 1;
+        }
 
         _agent.SetDestination(_target.transform.position);
     }
