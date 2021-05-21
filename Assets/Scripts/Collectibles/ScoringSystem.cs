@@ -11,6 +11,7 @@ public class ScoringSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //UI that says score and shows the current player score 
         scoreText.GetComponent<Text>().text = "Score: " + addScore;
     }
 }
