@@ -10,8 +10,16 @@ public class EnemyChase : MonoBehaviour
     [SerializeField]
     private GameObject _target;
     private NavMeshAgent _agent;
+    [Tooltip("The usual rate the enemy shall move at")]
+    [SerializeField]
+    private float runSpeed;
+    [Tooltip("The rate at which the speed is decreased")]
     [SerializeField]
     private float speedModifier;
+    [Tooltip("The timer until the enemy starts sprinting again after slowing down")]
+    [SerializeField]
+    private float trackingTimer;
+    private float _timer;
 
     public GameObject Target
     {
@@ -32,7 +40,8 @@ public class EnemyChase : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
         _agent = GetComponent<NavMeshAgent>();
 
-        
+        _agent.speed = runSpeed;
+        _timer = trackingTimer;
     }
 
     private void FixedUpdate()
@@ -41,14 +50,35 @@ public class EnemyChase : MonoBehaviour
         if (!_target)
             return;
 
+        //If the target is within a radius from the target, and its speed is greater than 1
         if (_agent.remainingDistance < 5 && _agent.speed > 1)
         {
+            //reduce speed by the speed modifier
             _agent.speed -= speedModifier;
 
+            //If the agent's speed somehow drops below 1, catch it
             if (_agent.speed < 1)
                 _agent.speed = 1;
+
+        }
+        //If the agent is outside the radius while still having a decreased speed
+        else if (_agent.remainingDistance > 5 && _agent.speed < runSpeed)
+        {
+            //Tick down the timer
+            _timer -= 0.1f;
+
+            //If the timer hits 0
+            if (_timer <= 0)
+            {
+                //Reset the speed to usual
+                _agent.speed = runSpeed;
+                //Reset the timer for next time
+                _timer = trackingTimer;
+            }
+                
         }
 
+        //Set the target's destination for the navmesh
         _agent.SetDestination(_target.transform.position);
     }
 }

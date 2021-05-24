@@ -651,7 +651,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 1607896137}
+  runSpeed: 4
   speedModifier: 0.05
+  trackingTimer: 50
 --- !u!195 &1392945150
 NavMeshAgent:
   m_ObjectHideFlags: 0
