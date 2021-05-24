@@ -12,6 +12,8 @@ public class LightBehaviour : MonoBehaviour
     public float maxBrightness;
     public float brightTimer;
 
+    private float _brightenRate;
+
     //this will grab the lighting comonent from an object to allow change 
     private Light _light;
 
@@ -30,11 +32,13 @@ public class LightBehaviour : MonoBehaviour
         {
             //lerp = changes value from a to b
             _light.intensity = Mathf.Lerp(minBrightness, maxBrightness, brightTimer);
+            brightTimer += _brightenRate * Time.deltaTime;
         }
         else if (powerLighting == true)
         {
             //changes value from b to a
             _light.intensity = Mathf.Lerp(maxBrightness, minBrightness, brightTimer);
+            brightTimer += _brightenRate * Time.deltaTime;
         }
     }
 }

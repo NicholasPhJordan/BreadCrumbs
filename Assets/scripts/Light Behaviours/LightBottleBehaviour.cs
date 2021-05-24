@@ -16,6 +16,7 @@ public class LightBottleBehaviour : MonoBehaviour
     public float maxBrightness = 50;
     //the sets to tranform between ranges
     public float lightTimer = 10;
+    private float _brightenRate = 5;
     //this will help make sure timer does not go done when not needed
     private bool _collided = false;
 
@@ -36,6 +37,7 @@ public class LightBottleBehaviour : MonoBehaviour
         {
             //this sets the lights range value to be bigger then normal
             _light1.range = Mathf.Lerp(minbrightness, maxBrightness, lightTimer);
+            lightTimer += _brightenRate * Time.deltaTime;
             _collided = true;
         }
     }
@@ -44,15 +46,19 @@ public class LightBottleBehaviour : MonoBehaviour
     {
         //this is a timer that will only only count down when collided = true
         if (_collided == true)
+        {
             timeLeft -= Time.deltaTime;
+            //this set the range value of the light to be normal sized
+            _light1.range = Mathf.Lerp(maxBrightness, minbrightness, lightTimer);
+            lightTimer += _brightenRate * Time.deltaTime;
+        }
 
         //checks if the time value is 0
         if (timeLeft <= 0)
         {
-            //this set the range value of the light to be normal sized
-            _light1.range = Mathf.Lerp(maxBrightness, minbrightness, lightTimer);
             //this resets the value back
             timeLeft = timeLeftReset;
+            _light1.range = Mathf.Lerp(maxBrightness, minbrightness, lightTimer);
             _collided = false;
         }
     }
