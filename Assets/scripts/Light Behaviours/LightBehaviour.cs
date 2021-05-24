@@ -18,18 +18,22 @@ public class LightBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //grabs the light component to allow change
         _light = GetComponent<Light>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //this will change the value of the light intensity depending if powerLighting is true or false
         if(powerLighting == false)
         {
+            //lerp = changes value from a to b
             _light.intensity = Mathf.Lerp(a, b, t);
         }
         else if (powerLighting == true)
         {
+            //changes value from b to a
             _light.intensity = Mathf.Lerp(b, a, t);
         }
     }
