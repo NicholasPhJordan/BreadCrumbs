@@ -92,7 +92,11 @@ InputManager:
     negativeButton: 
     positiveButton: w
     altNegativeButton: 
+<<<<<<< HEAD
     altPositiveButton: 
+=======
+    altPositiveButton: mouse 2
+>>>>>>> main
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
@@ -108,7 +112,11 @@ InputManager:
     negativeButton: 
     positiveButton: a
     altNegativeButton: 
+<<<<<<< HEAD
     altPositiveButton: 
+=======
+    altPositiveButton: mouse 2
+>>>>>>> main
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
@@ -124,7 +132,11 @@ InputManager:
     negativeButton: 
     positiveButton: s
     altNegativeButton: 
+<<<<<<< HEAD
     altPositiveButton: 
+=======
+    altPositiveButton: mouse 2
+>>>>>>> main
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
@@ -140,7 +152,11 @@ InputManager:
     negativeButton: 
     positiveButton: d
     altNegativeButton: 
+<<<<<<< HEAD
     altPositiveButton: 
+=======
+    altPositiveButton: mouse 2
+>>>>>>> main
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
