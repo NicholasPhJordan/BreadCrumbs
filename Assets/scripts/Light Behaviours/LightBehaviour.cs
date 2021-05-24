@@ -6,11 +6,11 @@ public class LightBehaviour : MonoBehaviour
 {
     [Tooltip("this will change from false to true if the lighting power up is false")]
     [SerializeField]
-    private bool powerLighting;
+    public bool powerLighting;
 
-    public float a;
-    public float b;
-    public float t;
+    public float minBrightness;
+    public float maxBrightness;
+    public float brightTimer;
 
     //this will grab the lighting comonent from an object to allow change 
     private Light _light;
@@ -29,12 +29,12 @@ public class LightBehaviour : MonoBehaviour
         if(powerLighting == false)
         {
             //lerp = changes value from a to b
-            _light.intensity = Mathf.Lerp(a, b, t);
+            _light.intensity = Mathf.Lerp(minBrightness, maxBrightness, brightTimer);
         }
         else if (powerLighting == true)
         {
             //changes value from b to a
-            _light.intensity = Mathf.Lerp(b, a, t);
+            _light.intensity = Mathf.Lerp(maxBrightness, minBrightness, brightTimer);
         }
     }
 }

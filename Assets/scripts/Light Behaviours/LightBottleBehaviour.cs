@@ -11,13 +11,13 @@ public class LightBottleBehaviour : MonoBehaviour
     public float timeLeft = 30.0f;
     public float timeLeftReset = 30.0f;
     //normal light range
-    public float a = 35;
+    public float minbrightness = 35;
     //power up light range
-    public float b = 50;
+    public float maxBrightness = 50;
     //the sets to tranform between ranges
-    public float t = 10;
+    public float lightTimer = 10;
     //this will help make sure timer does not go done when not needed
-    bool collided = false;
+    private bool _collided = false;
 
     private Rigidbody _rigidbody;
 
@@ -35,25 +35,25 @@ public class LightBottleBehaviour : MonoBehaviour
         if (collision.gameObject.CompareTag("LightingBottle"))
         {
             //this sets the lights range value to be bigger then normal
-            _light1.range = Mathf.Lerp(a, b, t);
-            collided = true;
+            _light1.range = Mathf.Lerp(minbrightness, maxBrightness, lightTimer);
+            _collided = true;
         }
     }
 
     private void Update()
     {
         //this is a timer that will only only count down when collided = true
-        if (collided == true)
+        if (_collided == true)
             timeLeft -= Time.deltaTime;
 
         //checks if the time value is 0
         if (timeLeft <= 0)
         {
             //this set the range value of the light to be normal sized
-            _light1.range = Mathf.Lerp(b, a, t);
+            _light1.range = Mathf.Lerp(maxBrightness, minbrightness, lightTimer);
             //this resets the value back
             timeLeft = timeLeftReset;
-            collided = false;
+            _collided = false;
         }
     }
 }
