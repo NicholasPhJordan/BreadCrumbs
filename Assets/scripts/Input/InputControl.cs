@@ -20,6 +20,7 @@ public class InputControl : MonoBehaviour
     {
         controls.Gameplay.Enable();
         controls.Gameplay.Movement.performed += OnMovePerformed;
+        controls.Gameplay.Movement.canceled += OnMovePerformed;
     }
 
     private void OnMovePerformed(InputAction.CallbackContext context)
