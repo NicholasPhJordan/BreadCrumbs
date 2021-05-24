@@ -51,10 +51,12 @@ public class EnemyChase : MonoBehaviour
             return;
 
         //If the target is within a radius from the target, and its speed is greater than 1
-        if (_agent.remainingDistance < 5 && _agent.speed > 1)
+        if (_agent.remainingDistance < 4 && _agent.speed > 1)
         {
             //reduce speed by the speed modifier
             _agent.speed -= _speedModifier;
+            //Reset the timer in case it was modified
+            _timer = _trackingTimer;
 
             //If the agent's speed somehow drops below 1, catch it
             if (_agent.speed < 1)
@@ -62,7 +64,7 @@ public class EnemyChase : MonoBehaviour
 
         }
         //If the agent is outside the radius while still having a decreased speed
-        else if (_agent.remainingDistance > 5 && _agent.speed < _runSpeed)
+        else if (_agent.remainingDistance > 4 && _agent.speed < _runSpeed)
         {
             //Tick down the timer
             _timer -= 0.1f;
