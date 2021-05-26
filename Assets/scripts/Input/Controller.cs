@@ -10,7 +10,7 @@ public class Controller : MonoBehaviour
     float horizontal;
     float vertical;
 
-    private void Update()
+    private void FixedUpdate()
     {
         //this si a new value that always direction to equal the forward of vertical and horizontal
         Vector3 moveDirection = Vector3.forward * vertical + Vector3.right * horizontal;
@@ -22,8 +22,20 @@ public class Controller : MonoBehaviour
         //rotate towards the direction it is moving
         transform.rotation = Quaternion.RotateTowards(transform.rotation, rotationMoveDirection, rotationSpeed * Time.deltaTime);
 
+        if (moveDirection.magnitude > 0)
+        {
+            rotationMoveDirection = Quaternion.LookRotation(moveDirection);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, rotationMoveDirection, rotationSpeed * Time.deltaTime);
+            //anim.SetBool("IsRunning", true);
+        }
+
         //this will tranform the value of the position depending on speed and direction
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
+
+        if (moveDirection.magnitude == 0)
+        {
+            // anim.SetBool("IsRunning", false);
+        }
     }
 
     public void OnMoveInput(float horizontal, float vertical)
