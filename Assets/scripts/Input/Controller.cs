@@ -45,7 +45,7 @@ public class Controller : MonoBehaviour
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
 
         //this will make sure the facing stays
-        transform.LookAt(Vector3.forward);
+        //transform.LookAt();
 
         if (moveDirection.magnitude == 0)
         {

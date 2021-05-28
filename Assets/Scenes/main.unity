@@ -498,8 +498,7 @@ MonoBehaviour:
   timeLeftReset: 10
   minbrightness: 2
   maxBrightness: 14
-  lightTimer: 10
-  _lightTimerResetter: 10
+  lightTimer: 0
 --- !u!114 &1229197983
 MonoBehaviour:
   m_ObjectHideFlags: 0
