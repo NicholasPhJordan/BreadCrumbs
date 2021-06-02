@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5767e30d9d9dfd54388a532fab18fe95, type: 3}
-  m_Name: AllCollected
+  m_Name: OnCollected
   m_EditorClassIdentifier: 
