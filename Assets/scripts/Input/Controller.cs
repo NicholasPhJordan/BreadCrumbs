@@ -26,6 +26,9 @@ public class Controller : MonoBehaviour
         //normalizes the vectore so diagnal isnt faster
         moveDirection = moveDirection.normalized;
 
+        Vector3 projectedCameraForward = Vector3.ProjectOnPlane(Camera.main.transform.forward, Vector3.up);
+        Quaternion rotationToCamera = Quaternion.LookRotation(projectedCameraForward, Vector3.up);
+
         //this will grab the Quaternion of the rotations and direction
         Quaternion rotationMoveDirection = Quaternion.LookRotation(moveDirection, Vector3.up);
 

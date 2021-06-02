@@ -63,16 +63,6 @@ public class LightBottleBehaviour : MonoBehaviour
             //this resets the value back
             timeLeft = timeLeftReset;
             _collided = false;
-            // now check if the interpolator has reached 1.0
-            // and swap maximum and minimum so value moves
-            // in the opposite direction.
-            if (lightTimer > 1.0f)
-            {
-                float temp = maxBrightness;
-                maxBrightness = minbrightness;
-                minbrightness = temp;
-                lightTimer = 0.0f;
-            }
         }
     }
 }
