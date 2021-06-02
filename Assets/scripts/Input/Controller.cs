@@ -40,21 +40,10 @@ public class Controller : MonoBehaviour
         {
             rotationMoveDirection = Quaternion.LookRotation(moveDirection);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, rotationMoveDirection, rotationSpeed * Time.deltaTime);
-            //make walking animimation
-            //line goes here
         }
 
         //this will tranform the value of the position depending on speed and direction
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
-
-        //this will make sure the facing stays
-        //transform.LookAt();
-
-        if (moveDirection.magnitude == 0)
-        {
-            //make still animation
-            //line goes here
-        }
     }
 
     public void OnMoveInput(float horizontal, float vertical)
