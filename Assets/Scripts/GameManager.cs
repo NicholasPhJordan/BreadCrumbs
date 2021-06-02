@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static List<GameObject> collected = new List<GameObject>();
-    public static bool reset = false;
+    private static List<CollectibleBehaviour> collected = new List<CollectibleBehaviour>();
+    [SerializeField]
+    private Event _onCollected;
+    [SerializeField]
+    private int _collectAmount;
+    private static int _playerScore;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +20,17 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (collected.Count >= _collectAmount)
+        {
+            _onCollected?.Raise(gameObject);
+
+            collected.Clear();
+        }
+    }
+
+    public static void AddCollectable(CollectibleBehaviour collectible)
+    {
+        collected.Add(collectible);
+        _playerScore += collectible.scoreAmount;
     }
 }

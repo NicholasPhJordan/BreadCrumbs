@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class CollectibleBehaviour : MonoBehaviour
 {
-    [SerializeField]
-    GameObject collectible;
     [Tooltip("The amount each collectable is worth")]
-    public float scoreAmount;
+    public int scoreAmount;
+
+    public void ResetCollectible()
+    {
+        transform.position =
+            new Vector3(transform.position.x, 0.5f, transform.position.z);
+    }
 
     //Collision with the "Player" will destroy the object and update the score
     void OnTriggerEnter(Collider other)
@@ -18,6 +22,6 @@ public class CollectibleBehaviour : MonoBehaviour
         transform.position =
             new Vector3(transform.position.x, -3, transform.position.z);
         //update the collected variable
-        GameManager.collected.Add(collectible);
+        GameManager.AddCollectable(this);
     }
 }

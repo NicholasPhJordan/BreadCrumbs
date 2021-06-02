@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2250175203114752830}
   - component: {fileID: 2250175203114752825}
   - component: {fileID: 2250175203114752829}
+  - component: {fileID: 1179303155624994569}
+  - component: {fileID: 8690709305240641325}
   m_Layer: 8
   m_Name: Collectible
   m_TagString: Untagged
@@ -50,7 +52,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2250175203114752824}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -107,8 +109,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee76e1dac267d944da414fff919133d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectable: {fileID: 2250175203114752824}
+  collectible: {fileID: 2250175203114752824}
   scoreAmount: 5
+--- !u!114 &1179303155624994569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2250175203114752824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438497cff8b55c64f8e9c13fc5ab8cab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onCollected: {fileID: 11400000, guid: 1cca1dede308c5740ac492b058a97911, type: 2}
+  collectCount: 3
+--- !u!114 &8690709305240641325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2250175203114752824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bee237a7635ab69418d44e5227275414, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _actions:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2250175203114752829}
+        m_MethodName: ResetCollectible
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _event: {fileID: 11400000, guid: 1cca1dede308c5740ac492b058a97911, type: 2}
+  _intendedSender: {fileID: 2250175203114752824}
 --- !u!1 &3097375400608007402
 GameObject:
   m_ObjectHideFlags: 0
