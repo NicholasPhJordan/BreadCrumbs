@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static float collected = 0;
+    public static List<GameObject> collected = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()

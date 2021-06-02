@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CollectibleBehaviour : MonoBehaviour
 {
+    [SerializeField]
+    GameObject collectible;
     [Tooltip("The amount each collectable is worth")]
     public float scoreAmount;
 
@@ -16,6 +18,6 @@ public class CollectibleBehaviour : MonoBehaviour
         transform.position =
             new Vector3(transform.position.x, -3, transform.position.z);
         //update the collected variable
-        GameManager.collected += 1;
+        GameManager.collected.Add(collectible);
     }
 }

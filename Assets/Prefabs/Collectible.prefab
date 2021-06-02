@@ -107,6 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee76e1dac267d944da414fff919133d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectable: {fileID: 2250175203114752824}
   scoreAmount: 5
 --- !u!1 &3097375400608007402
 GameObject:
