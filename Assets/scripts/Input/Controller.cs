@@ -34,16 +34,18 @@ public class Controller : MonoBehaviour
 
         //this will set the rotation value to include the direction and allow player to
         //rotate towards the direction it is moving
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, rotationMoveDirection, rotationSpeed * Time.deltaTime);
+        //transform.rotation = Quaternion.RotateTowards(transform.rotation, rotationMoveDirection, rotationSpeed * Time.deltaTime);
 
         if (moveDirection.magnitude > 0)
         {
             rotationMoveDirection = Quaternion.LookRotation(moveDirection);
+            //this will set the rotation value to include the direction and allow player to
+            //rotate towards the direction it is moving
             transform.rotation = Quaternion.RotateTowards(transform.rotation, rotationMoveDirection, rotationSpeed * Time.deltaTime);
         }
 
         //this will tranform the value of the position depending on speed and direction
-        transform.position += moveDirection * moveSpeed * Time.deltaTime;
+        transform.position += moveDirection * moveSpeed;
     }
 
     public void OnMoveInput(float horizontal, float vertical)
