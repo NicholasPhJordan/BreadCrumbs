@@ -19,6 +19,8 @@ public class LightBottleBehaviour : MonoBehaviour
     private float _brightenRate = 0.5f;
     //this will help make sure timer does not go done when not needed
     private bool _collided = false;
+    //enumerator value
+    public int waitTime;
 
     private Rigidbody _rigidbody;
 
@@ -36,6 +38,28 @@ public class LightBottleBehaviour : MonoBehaviour
         if (collision.gameObject.CompareTag("LightingBottle"))
         {
            _collided = true;
+        }
+    }
+
+    IEnumerator LightEnumerator()
+    {
+        // - After 0 seconds, prints "Starting 0.0"
+        // - After 2 seconds, prints "WaitAndPrint 2.0"
+        // - After 2 seconds, prints "Done 2.0"
+        StartCoroutine("WaitAndChange", waitTime);
+        _light1.range = Mathf.Lerp(minbrightness, waitTime, lightTimer);
+        yield return new WaitForSeconds(1);
+        // Start function WaitAndPrint as a coroutine. And wait until it is completed.
+        // the same as yield return WaitAndPrint(2.0f);
+        StopCoroutine("WaitAndChange");
+    }
+
+    // suspend execution for waitTime seconds
+    IEnumerator WaitAndChange(float waitTime)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(waitTime);
         }
     }
 
