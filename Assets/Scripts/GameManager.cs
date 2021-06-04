@@ -11,6 +11,11 @@ public class GameManager : MonoBehaviour
     private int _collectAmount;
     private static int _playerScore;
 
+    public static int PlayerScore
+    {
+        get { return _playerScore; }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +28,6 @@ public class GameManager : MonoBehaviour
         if (collected.Count >= _collectAmount)
         {
             _onCollected?.Raise(gameObject);
-
             collected.Clear();
         }
     }
@@ -31,6 +35,8 @@ public class GameManager : MonoBehaviour
     public static void AddCollectable(CollectibleBehaviour collectible)
     {
         collected.Add(collectible);
-        _playerScore += collectible.scoreAmount;
+        _playerScore += collectible._scoreAmount;
+        Debug.Log(collected.Count);
     }
+
 }

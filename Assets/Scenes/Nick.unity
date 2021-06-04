@@ -293,7 +293,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75442563}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.28, y: 0.855, z: -8.43}
+  m_LocalPosition: {x: 0, y: 1, z: -8.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1742695186}
@@ -847,6 +847,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8690709305240641325, guid: 1b82de60fab5eb8419bef751243c92aa,
+        type: 3}
+      propertyPath: _actions.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetCollectible
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b82de60fab5eb8419bef751243c92aa, type: 3}
 --- !u!1 &1654281834
@@ -953,6 +958,7 @@ GameObject:
   - component: {fileID: 1672978952}
   - component: {fileID: 1672978951}
   - component: {fileID: 1672978950}
+  - component: {fileID: 1672978953}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -991,7 +997,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f999cae67bd568e49a5f147809d83561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 1672978948}
+  _scoreText: {fileID: 1672978951}
+  _score: 0
 --- !u!114 &1672978951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1005,7 +1012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1032,6 +1039,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1672978948}
   m_CullTransparentMesh: 0
+--- !u!114 &1672978953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672978948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5025e319bd26064b8c45a9adf9585c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onCollected: {fileID: 11400000, guid: 1cca1dede308c5740ac492b058a97911, type: 2}
+  _collectAmount: 3
 --- !u!1 &1742695184
 GameObject:
   m_ObjectHideFlags: 0

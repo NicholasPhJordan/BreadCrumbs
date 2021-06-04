@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2250175203114752830}
   - component: {fileID: 2250175203114752825}
   - component: {fileID: 2250175203114752829}
-  - component: {fileID: 1179303155624994569}
   - component: {fileID: 8690709305240641325}
+  - component: {fileID: 9146134941810753011}
   m_Layer: 8
   m_Name: Collectible
   m_TagString: Untagged
@@ -109,22 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee76e1dac267d944da414fff919133d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectible: {fileID: 2250175203114752824}
-  scoreAmount: 5
---- !u!114 &1179303155624994569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2250175203114752824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 438497cff8b55c64f8e9c13fc5ab8cab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _onCollected: {fileID: 11400000, guid: 1cca1dede308c5740ac492b058a97911, type: 2}
-  collectCount: 3
+  _scoreAmount: 5
 --- !u!114 &8690709305240641325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,6 +138,20 @@ MonoBehaviour:
         m_CallState: 2
   _event: {fileID: 11400000, guid: 1cca1dede308c5740ac492b058a97911, type: 2}
   _intendedSender: {fileID: 2250175203114752824}
+--- !u!114 &9146134941810753011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2250175203114752824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5025e319bd26064b8c45a9adf9585c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onCollected: {fileID: 11400000, guid: 1cca1dede308c5740ac492b058a97911, type: 2}
+  _collectAmount: 3
 --- !u!1 &3097375400608007402
 GameObject:
   m_ObjectHideFlags: 0
