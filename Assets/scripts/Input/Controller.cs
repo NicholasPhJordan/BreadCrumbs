@@ -32,10 +32,6 @@ public class Controller : MonoBehaviour
         //this will grab the Quaternion of the rotations and direction
         Quaternion rotationMoveDirection = Quaternion.LookRotation(moveDirection, Vector3.up);
 
-        //this will set the rotation value to include the direction and allow player to
-        //rotate towards the direction it is moving
-        //transform.rotation = Quaternion.RotateTowards(transform.rotation, rotationMoveDirection, rotationSpeed * Time.deltaTime);
-
         if (moveDirection.magnitude > 0)
         {
             rotationMoveDirection = Quaternion.LookRotation(moveDirection);
