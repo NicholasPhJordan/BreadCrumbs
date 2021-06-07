@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     private static List<CollectibleBehaviour> collected = new List<CollectibleBehaviour>();
     [SerializeField]
     private Event _onCollected;
+    [Tooltip("The amount the player must collect to reset Collectibles")]
     [SerializeField]
     private int _collectAmount;
     private static int _playerScore;
