@@ -8,8 +8,15 @@ public class CollectibleBehaviour : MonoBehaviour
     [Tooltip("The amount each collectable is worth")]
     [SerializeField]
     public int _scoreAmount;
+    [SerializeField]
+    private float _respawnTime;
 
     public void ResetCollectible()
+    {
+        Invoke("ResetPosition", _respawnTime);
+    }
+
+    private void ResetPosition()
     {
         transform.position =
             new Vector3(transform.position.x, 0.5f, transform.position.z);

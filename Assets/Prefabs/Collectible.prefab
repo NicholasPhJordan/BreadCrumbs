@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2250175203114752825}
   - component: {fileID: 2250175203114752829}
   - component: {fileID: 8690709305240641325}
-  - component: {fileID: -948370709068042135}
   m_Layer: 8
   m_Name: Collectible
   m_TagString: Untagged
@@ -110,6 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scoreAmount: 10
+  _respawnTime: 0.5
 --- !u!114 &8690709305240641325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,21 +137,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _event: {fileID: 11400000, guid: 1cca1dede308c5740ac492b058a97911, type: 2}
-  _intendedSender: {fileID: 2250175203114752824}
---- !u!114 &-948370709068042135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2250175203114752824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5025e319bd26064b8c45a9adf9585c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _onCollected: {fileID: 11400000, guid: 1cca1dede308c5740ac492b058a97911, type: 2}
-  _collectAmount: 2
+  _intendedSender: {fileID: 1375038021162915926, guid: 89d048460d2bf214b81d22d9e726789c,
+    type: 3}
 --- !u!1 &3097375400608007402
 GameObject:
   m_ObjectHideFlags: 0
