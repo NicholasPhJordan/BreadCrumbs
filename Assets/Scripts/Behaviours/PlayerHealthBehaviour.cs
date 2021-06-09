@@ -9,6 +9,7 @@ public class PlayerHealthBehaviour : MonoBehaviour
     public bool playerDidDie = false;
 
     private Rigidbody _body;
+    public GameObject GameOverScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,14 @@ public class PlayerHealthBehaviour : MonoBehaviour
         {
             //this adds a strike to health 
             __lives += 1;
+        }
+    }
+
+    public void OpenGameOverScreen()
+    {
+        if(GameOverScreen != null)
+        {
+            GameOverScreen.SetActive(true);
         }
     }
 
@@ -47,6 +56,8 @@ public class PlayerHealthBehaviour : MonoBehaviour
             _body.position = new Vector3(-2, 2, -7);
             //temperary until we get a Game Over screen
             Application.Quit();
+            //sets Game Over Screen to be true
+            OpenGameOverScreen();
         }
         else if (__lives > healthStrikeLimit)
             __lives = 0;
