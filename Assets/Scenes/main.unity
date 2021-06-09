@@ -100,7 +100,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: cc51b7f4cee74064698d273d8b703014,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -224,26 +224,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 57669444}
-  - component: {fileID: 1016662208}
-  - component: {fileID: 1016662207}
-  - component: {fileID: 1016662209}
-  m_Layer: 0
-  m_Name: 
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!1 &57669443
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 57669444}
-  - component: {fileID: 1016662208}
   - component: {fileID: 1016662207}
   - component: {fileID: 1016662209}
   m_Layer: 0
@@ -265,7 +245,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &235466352
 GameObject:
@@ -391,13 +371,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57669443}
+  m_GameObject: {fileID: 2074478740}
   m_LocalRotation: {x: -0.39805266, y: -0.23582067, z: -0.10665786, w: 0.8800948}
   m_LocalPosition: {x: -6.6191316, y: 6.940048, z: 1.5084839}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -48.673004, y: -30.000002, z: 0}
 --- !u!114 &1016662209
 MonoBehaviour:
@@ -989,7 +969,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &1570388111
 MonoBehaviour:
@@ -1022,6 +1002,22 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1 &2074478740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1016662208}
+  m_Layer: 0
+  m_Name: Recovery GameObject (1016662208)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &2124745534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,6 +1188,7 @@ GameObject:
   - component: {fileID: 8495763037213531225}
   - component: {fileID: 3333910806877938014}
   - component: {fileID: 4390800640863838564}
+  - component: {fileID: 38501804085651349}
   m_Layer: 0
   m_Name: Tree89
   m_TagString: Untagged
@@ -1199,6 +1196,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &38501804085651349
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38501804085651348}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &79503474131733939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,6 +1223,7 @@ GameObject:
   - component: {fileID: 7286245259844876469}
   - component: {fileID: 8126162758875797304}
   - component: {fileID: 2016144374800443956}
+  - component: {fileID: 79503474131733940}
   m_Layer: 0
   m_Name: Tree57
   m_TagString: Untagged
@@ -1217,6 +1231,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &79503474131733940
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79503474131733939}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &85584418999956648
 Transform:
   m_ObjectHideFlags: 0
@@ -1301,6 +1331,7 @@ GameObject:
   - component: {fileID: 1605060917694930775}
   - component: {fileID: 3345164084888592779}
   - component: {fileID: 8128921277591397476}
+  - component: {fileID: 120704795195115029}
   m_Layer: 0
   m_Name: Bush82
   m_TagString: Untagged
@@ -1308,6 +1339,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &120704795195115029
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120704795195115028}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &125765172075098834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,6 +1366,7 @@ GameObject:
   - component: {fileID: 5270269153925569441}
   - component: {fileID: 5226442239597794996}
   - component: {fileID: 4698044788864095821}
+  - component: {fileID: 125765172075098835}
   m_Layer: 0
   m_Name: Bush58
   m_TagString: Untagged
@@ -1326,6 +1374,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &125765172075098835
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125765172075098834}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &127282007329626358
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1353,6 +1417,7 @@ GameObject:
   - component: {fileID: 7385172905672415007}
   - component: {fileID: 3034700595623384162}
   - component: {fileID: 3866485534958291123}
+  - component: {fileID: 154149855776157444}
   m_Layer: 0
   m_Name: Tree113
   m_TagString: Untagged
@@ -1360,6 +1425,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &154149855776157444
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154149855776157443}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &162030787595175505
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,6 +1452,7 @@ GameObject:
   - component: {fileID: 7770108733690421768}
   - component: {fileID: 2163546284255272693}
   - component: {fileID: 4210355045767516657}
+  - component: {fileID: 162030787595175506}
   m_Layer: 0
   m_Name: Bush36
   m_TagString: Untagged
@@ -1378,6 +1460,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &162030787595175506
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162030787595175505}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &163517134822812014
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1429,6 +1527,7 @@ GameObject:
   - component: {fileID: 7748627686704756951}
   - component: {fileID: 1523387200674414271}
   - component: {fileID: 4520669056780447809}
+  - component: {fileID: 203965113593261945}
   m_Layer: 0
   m_Name: Bush43
   m_TagString: Untagged
@@ -1436,6 +1535,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &203965113593261945
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203965113593261944}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &210695448573613156
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1667,6 +1782,7 @@ GameObject:
   - component: {fileID: 9095956046809892096}
   - component: {fileID: 3883601383111738050}
   - component: {fileID: 97131569008720860}
+  - component: {fileID: 351080208914998508}
   m_Layer: 0
   m_Name: Bush98
   m_TagString: Untagged
@@ -1674,6 +1790,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &351080208914998508
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351080208914998507}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &377190868962705238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,6 +1835,7 @@ GameObject:
   - component: {fileID: 6713695371556371867}
   - component: {fileID: 2082641939438047660}
   - component: {fileID: 2150255739880904417}
+  - component: {fileID: 395961943181388030}
   m_Layer: 0
   m_Name: Bush1
   m_TagString: Untagged
@@ -1710,6 +1843,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &395961943181388030
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395961943181388029}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &399422293682236684
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1973,6 +2122,7 @@ GameObject:
   - component: {fileID: 1557786954031191943}
   - component: {fileID: 7132161975194766588}
   - component: {fileID: 2276225472556207291}
+  - component: {fileID: 580902491698143519}
   m_Layer: 0
   m_Name: Bush61
   m_TagString: Untagged
@@ -1980,6 +2130,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &580902491698143519
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580902491698143518}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &603797449701790713
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,6 +2175,7 @@ GameObject:
   - component: {fileID: 3455707016274254428}
   - component: {fileID: 2986500229145118005}
   - component: {fileID: 2286088716551378616}
+  - component: {fileID: 608196328183174536}
   m_Layer: 0
   m_Name: Bush97
   m_TagString: Untagged
@@ -2016,6 +2183,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &608196328183174536
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608196328183174535}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &613799384830055798
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2263,6 +2446,7 @@ GameObject:
   - component: {fileID: 1574630448476419557}
   - component: {fileID: 4903798275652284626}
   - component: {fileID: 6005285251490840401}
+  - component: {fileID: 745221994508161293}
   m_Layer: 0
   m_Name: Bush51
   m_TagString: Untagged
@@ -2270,6 +2454,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &745221994508161293
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745221994508161292}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &748886758608422748
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2338,6 +2538,7 @@ GameObject:
   - component: {fileID: 5201120928638534787}
   - component: {fileID: 8120812040617812822}
   - component: {fileID: 8630756813727500736}
+  - component: {fileID: 765741847830719993}
   m_Layer: 0
   m_Name: Bush79
   m_TagString: Untagged
@@ -2345,6 +2546,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &765741847830719993
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765741847830719992}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &768286378418451803
 Transform:
   m_ObjectHideFlags: 0
@@ -2370,6 +2587,7 @@ GameObject:
   - component: {fileID: 1925939370397709102}
   - component: {fileID: 7473601727277141207}
   - component: {fileID: 6985629169706444018}
+  - component: {fileID: 789714439543411574}
   m_Layer: 0
   m_Name: Tree81
   m_TagString: Untagged
@@ -2377,6 +2595,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &789714439543411574
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789714439543411573}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &793318281933242048
 Transform:
   m_ObjectHideFlags: 0
@@ -2424,6 +2658,7 @@ GameObject:
   - component: {fileID: 3300997358258893145}
   - component: {fileID: 408333246083641465}
   - component: {fileID: 2801763247347562675}
+  - component: {fileID: 841946708279168757}
   m_Layer: 0
   m_Name: Tree107
   m_TagString: Untagged
@@ -2431,6 +2666,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &841946708279168757
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841946708279168756}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &843910780961165638
 Transform:
   m_ObjectHideFlags: 0
@@ -2456,6 +2707,7 @@ GameObject:
   - component: {fileID: 647369453149491303}
   - component: {fileID: 3605960595094327353}
   - component: {fileID: 6181348086552085561}
+  - component: {fileID: 894945297951115087}
   m_Layer: 0
   m_Name: Tree87
   m_TagString: Untagged
@@ -2463,6 +2715,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &894945297951115087
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894945297951115086}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &897039843236990395
 Transform:
   m_ObjectHideFlags: 0
@@ -2488,6 +2756,7 @@ GameObject:
   - component: {fileID: 5042914068536523787}
   - component: {fileID: 6364976598812215130}
   - component: {fileID: 1358857375484798630}
+  - component: {fileID: 900267221773726956}
   m_Layer: 0
   m_Name: Bush28
   m_TagString: Untagged
@@ -2495,6 +2764,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &900267221773726956
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900267221773726955}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &919180938021567768
 Transform:
   m_ObjectHideFlags: 0
@@ -2538,6 +2823,7 @@ GameObject:
   - component: {fileID: 9099764419070391258}
   - component: {fileID: 494415972500873391}
   - component: {fileID: 5248866501840997599}
+  - component: {fileID: 924111623187736606}
   m_Layer: 0
   m_Name: Bush68
   m_TagString: Untagged
@@ -2545,6 +2831,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &924111623187736606
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924111623187736605}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &934691976033883939
 GameObject:
   m_ObjectHideFlags: 0
@@ -2556,6 +2858,7 @@ GameObject:
   - component: {fileID: 1440931729724606573}
   - component: {fileID: 198526176777538526}
   - component: {fileID: 2338968651435038982}
+  - component: {fileID: 934691976033883940}
   m_Layer: 0
   m_Name: Bush12
   m_TagString: Untagged
@@ -2563,6 +2866,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &934691976033883940
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934691976033883939}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &953842889538516113
 GameObject:
   m_ObjectHideFlags: 0
@@ -2574,6 +2893,7 @@ GameObject:
   - component: {fileID: 3018265540730692977}
   - component: {fileID: 5041574567255236343}
   - component: {fileID: 5673788762595553849}
+  - component: {fileID: 953842889538516114}
   m_Layer: 0
   m_Name: Bush26
   m_TagString: Untagged
@@ -2581,6 +2901,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &953842889538516114
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953842889538516113}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &954858808735573132
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2648,6 +2984,7 @@ GameObject:
   - component: {fileID: 7756192630546215441}
   - component: {fileID: 6056652603781415440}
   - component: {fileID: 6557169387882050840}
+  - component: {fileID: 1004597588626025849}
   m_Layer: 0
   m_Name: Bush56
   m_TagString: Untagged
@@ -2655,6 +2992,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &1004597588626025849
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004597588626025848}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &1030163581550302108
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2905,6 +3258,7 @@ GameObject:
   - component: {fileID: 7100745857432068622}
   - component: {fileID: 4597194177936609651}
   - component: {fileID: 3042983900147927719}
+  - component: {fileID: 1116965641947469167}
   m_Layer: 0
   m_Name: Bush24
   m_TagString: Untagged
@@ -2912,6 +3266,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &1116965641947469167
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116965641947469166}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &1121564007705008183
 Transform:
   m_ObjectHideFlags: 0
@@ -3079,6 +3449,7 @@ GameObject:
   - component: {fileID: 1657590406440362179}
   - component: {fileID: 3175064374668344521}
   - component: {fileID: 6462724856353971550}
+  - component: {fileID: 1237085325549225156}
   m_Layer: 0
   m_Name: Tree120
   m_TagString: Untagged
@@ -3086,6 +3457,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &1237085325549225156
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237085325549225155}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &1238678694785185871
 Transform:
   m_ObjectHideFlags: 0
@@ -3152,6 +3539,7 @@ GameObject:
   - component: {fileID: 3753344615731441283}
   - component: {fileID: 8713814328880035966}
   - component: {fileID: 6341362896224258513}
+  - component: {fileID: 1241895407996780005}
   m_Layer: 0
   m_Name: Bush73
   m_TagString: Untagged
@@ -3159,6 +3547,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &1241895407996780005
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241895407996780004}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &1248479770380092672
 Transform:
   m_ObjectHideFlags: 0
@@ -3262,6 +3666,7 @@ GameObject:
   - component: {fileID: 8923290964487350056}
   - component: {fileID: 4783216147378071016}
   - component: {fileID: 1745245273081905356}
+  - component: {fileID: 1295858648731353361}
   m_Layer: 0
   m_Name: Tree111
   m_TagString: Untagged
@@ -3269,6 +3674,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &1295858648731353361
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295858648731353360}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &1298033770640987978
 Transform:
   m_ObjectHideFlags: 0
@@ -3439,6 +3860,7 @@ GameObject:
   - component: {fileID: 8866746885202560032}
   - component: {fileID: 7204060650822245880}
   - component: {fileID: 1950216327305981071}
+  - component: {fileID: 1359827060526469143}
   m_Layer: 0
   m_Name: Bush99
   m_TagString: Untagged
@@ -3446,6 +3868,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &1359827060526469143
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359827060526469142}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1361671626950513726
 GameObject:
   m_ObjectHideFlags: 0
@@ -3457,6 +3895,7 @@ GameObject:
   - component: {fileID: 7034866625093713411}
   - component: {fileID: 7055060509513633615}
   - component: {fileID: 3334657319102303119}
+  - component: {fileID: 1361671626950513727}
   m_Layer: 0
   m_Name: Bush42
   m_TagString: Untagged
@@ -3464,6 +3903,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &1361671626950513727
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361671626950513726}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1372966557289556825
 GameObject:
   m_ObjectHideFlags: 0
@@ -3475,13 +3930,30 @@ GameObject:
   - component: {fileID: 6841652047797953554}
   - component: {fileID: 4256362099909088399}
   - component: {fileID: 8174984207770668768}
+  - component: {fileID: 1372966557289556826}
   m_Layer: 0
   m_Name: Tree7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &1372966557289556826
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372966557289556825}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &1413017958790667600
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3549,6 +4021,7 @@ GameObject:
   - component: {fileID: 2105532307117924541}
   - component: {fileID: 6909857123449850818}
   - component: {fileID: 1696338250432997828}
+  - component: {fileID: 1449309133990837901}
   m_Layer: 0
   m_Name: Tree98
   m_TagString: Untagged
@@ -3556,6 +4029,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &1449309133990837901
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449309133990837900}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &1474934748254854060
 Transform:
   m_ObjectHideFlags: 0
@@ -3581,6 +4070,7 @@ GameObject:
   - component: {fileID: 3684053701651032919}
   - component: {fileID: 6795974370753108501}
   - component: {fileID: 524223602686430547}
+  - component: {fileID: 1475438791191391415}
   m_Layer: 0
   m_Name: Bush100
   m_TagString: Untagged
@@ -3588,6 +4078,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &1475438791191391415
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475438791191391414}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &1484040174599683863
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3615,6 +4121,7 @@ GameObject:
   - component: {fileID: 8154499230024843453}
   - component: {fileID: 5044910373758052590}
   - component: {fileID: 1030163581550302108}
+  - component: {fileID: 1499486292064334977}
   m_Layer: 0
   m_Name: Bush96
   m_TagString: Untagged
@@ -3622,6 +4129,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &1499486292064334977
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499486292064334976}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &1505116499719615476
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3826,6 +4349,7 @@ GameObject:
   - component: {fileID: 2400991093889623292}
   - component: {fileID: 3720359962734815927}
   - component: {fileID: 7971596685353448145}
+  - component: {fileID: 1603516793324969371}
   m_Layer: 0
   m_Name: Tree99
   m_TagString: Untagged
@@ -3833,6 +4357,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &1603516793324969371
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603516793324969370}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &1605060917694930775
 Transform:
   m_ObjectHideFlags: 0
@@ -3858,6 +4398,7 @@ GameObject:
   - component: {fileID: 1184853725177651510}
   - component: {fileID: 8680410042371116459}
   - component: {fileID: 7225828750506193672}
+  - component: {fileID: 1611093528342907200}
   m_Layer: 0
   m_Name: Bush92
   m_TagString: Untagged
@@ -3865,6 +4406,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &1611093528342907200
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611093528342907199}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &1614504243497449896
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4183,6 +4740,7 @@ GameObject:
   - component: {fileID: 7491741942029285590}
   - component: {fileID: 6863345946927047648}
   - component: {fileID: 8624506074392177328}
+  - component: {fileID: 1723604356271341393}
   m_Layer: 0
   m_Name: Bush46
   m_TagString: Untagged
@@ -4190,6 +4748,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &1723604356271341393
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723604356271341392}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &1728731862490075845
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4265,6 +4839,7 @@ GameObject:
   - component: {fileID: 3552814587061341935}
   - component: {fileID: 2233042712600768689}
   - component: {fileID: 9107207123924234804}
+  - component: {fileID: 1760385969990214603}
   m_Layer: 0
   m_Name: Bush60
   m_TagString: Untagged
@@ -4272,6 +4847,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &1760385969990214603
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760385969990214602}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &1769980978879253714
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4339,6 +4930,7 @@ GameObject:
   - component: {fileID: 897039843236990395}
   - component: {fileID: 1326542046873981140}
   - component: {fileID: 7234673674089551231}
+  - component: {fileID: 1784290356626457519}
   m_Layer: 0
   m_Name: Bush11
   m_TagString: Untagged
@@ -4346,6 +4938,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &1784290356626457519
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784290356626457518}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &1789256312607200636
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4365,6 +4973,7 @@ GameObject:
   - component: {fileID: 5198125953084182586}
   - component: {fileID: 4177065260152807110}
   - component: {fileID: 7987152591536632102}
+  - component: {fileID: 1814367566002303555}
   m_Layer: 0
   m_Name: Tree88
   m_TagString: Untagged
@@ -4372,6 +4981,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &1814367566002303555
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814367566002303554}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1819653436004966412
 GameObject:
   m_ObjectHideFlags: 0
@@ -4383,6 +5008,7 @@ GameObject:
   - component: {fileID: 3942464851530388298}
   - component: {fileID: 5589294514912894303}
   - component: {fileID: 4499262604207779241}
+  - component: {fileID: 1819653436004966413}
   m_Layer: 0
   m_Name: Bush47
   m_TagString: Untagged
@@ -4390,6 +5016,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &1819653436004966413
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819653436004966412}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &1821829393352728451
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4409,6 +5051,7 @@ GameObject:
   - component: {fileID: 6812600624255867350}
   - component: {fileID: 5939871389843719514}
   - component: {fileID: 7911271969191352279}
+  - component: {fileID: 1825677868752441677}
   m_Layer: 0
   m_Name: Bush14
   m_TagString: Untagged
@@ -4416,6 +5059,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &1825677868752441677
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825677868752441676}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &1845508736615907538
 Transform:
   m_ObjectHideFlags: 0
@@ -4455,6 +5114,7 @@ GameObject:
   - component: {fileID: 3386399496607699352}
   - component: {fileID: 8109651511380651835}
   - component: {fileID: 9042079921109812509}
+  - component: {fileID: 1851608258573755125}
   m_Layer: 0
   m_Name: Tree90
   m_TagString: Untagged
@@ -4462,6 +5122,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &1851608258573755125
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851608258573755124}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &1868362051063940050
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4950,6 +5626,7 @@ GameObject:
   - component: {fileID: 414580101717150590}
   - component: {fileID: 8921740418365059324}
   - component: {fileID: 6958310608243090027}
+  - component: {fileID: 2027597864096995353}
   m_Layer: 0
   m_Name: Bush20
   m_TagString: Untagged
@@ -4957,6 +5634,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &2027597864096995353
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027597864096995352}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &2055674170539024652
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4998,6 +5691,7 @@ GameObject:
   - component: {fileID: 3444861838821592824}
   - component: {fileID: 4691360905377428384}
   - component: {fileID: 6653904734336814152}
+  - component: {fileID: 2114514492681537456}
   m_Layer: 0
   m_Name: Bush9
   m_TagString: Untagged
@@ -5005,6 +5699,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &2114514492681537456
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114514492681537455}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2122399408700114083
 GameObject:
   m_ObjectHideFlags: 0
@@ -5174,6 +5884,7 @@ GameObject:
   - component: {fileID: 1298033770640987978}
   - component: {fileID: 2854717164446336129}
   - component: {fileID: 3005724144104861389}
+  - component: {fileID: 2168060397134901985}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -5181,6 +5892,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &2168060397134901985
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2168060397134901984}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &2182021701872927356
 Transform:
   m_ObjectHideFlags: 0
@@ -5246,6 +5973,7 @@ GameObject:
   - component: {fileID: 2837285882203453466}
   - component: {fileID: 210695448573613156}
   - component: {fileID: 5179260300389246658}
+  - component: {fileID: 2234445859864575860}
   m_Layer: 0
   m_Name: Bush80
   m_TagString: Untagged
@@ -5253,6 +5981,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &2234445859864575860
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2234445859864575859}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &2238398502425857225
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5636,6 +6380,7 @@ GameObject:
   - component: {fileID: 1756175028888631987}
   - component: {fileID: 6670252221254252600}
   - component: {fileID: 7578564519903494268}
+  - component: {fileID: 2370448960354082116}
   m_Layer: 0
   m_Name: Tree91
   m_TagString: Untagged
@@ -5643,6 +6388,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &2370448960354082116
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2370448960354082115}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2371960271059065406
 GameObject:
   m_ObjectHideFlags: 0
@@ -5654,6 +6415,7 @@ GameObject:
   - component: {fileID: 324155207150970743}
   - component: {fileID: 3167131318733641240}
   - component: {fileID: 670085028508148517}
+  - component: {fileID: 2371960271059065407}
   m_Layer: 0
   m_Name: Bush67
   m_TagString: Untagged
@@ -5661,6 +6423,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &2371960271059065407
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2371960271059065406}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &2377087725901396766
 Transform:
   m_ObjectHideFlags: 0
@@ -5700,6 +6478,7 @@ GameObject:
   - component: {fileID: 5406814461733573290}
   - component: {fileID: 2533147524520965946}
   - component: {fileID: 6847335908224190498}
+  - component: {fileID: 2410738786003475620}
   m_Layer: 0
   m_Name: Bush107
   m_TagString: Untagged
@@ -5707,6 +6486,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &2410738786003475620
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2410738786003475619}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &2421585151961211780
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5760,6 +6555,7 @@ GameObject:
   - component: {fileID: 4147668367417700085}
   - component: {fileID: 163517134822812014}
   - component: {fileID: 7252617823557712800}
+  - component: {fileID: 2439290944253107440}
   m_Layer: 0
   m_Name: Bush109
   m_TagString: Untagged
@@ -5767,6 +6563,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &2439290944253107440
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2439290944253107439}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &2441888038895564728
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5820,6 +6632,7 @@ GameObject:
   - component: {fileID: 4068763121578399005}
   - component: {fileID: 6013099607550744768}
   - component: {fileID: 1339226887801979945}
+  - component: {fileID: 2453234280654349107}
   m_Layer: 0
   m_Name: Tree33
   m_TagString: Untagged
@@ -5827,6 +6640,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &2453234280654349107
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2453234280654349106}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &2506704294212358249
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5926,6 +6755,7 @@ GameObject:
   - component: {fileID: 8679923332027413691}
   - component: {fileID: 218841857448870327}
   - component: {fileID: 2540757345671796037}
+  - component: {fileID: 2555425556397541213}
   m_Layer: 0
   m_Name: Tree93
   m_TagString: Untagged
@@ -5933,6 +6763,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &2555425556397541213
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2555425556397541212}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2560633990794195527
 GameObject:
   m_ObjectHideFlags: 0
@@ -5944,6 +6790,7 @@ GameObject:
   - component: {fileID: 5558120067656462181}
   - component: {fileID: 5371607595217943046}
   - component: {fileID: 7641651971768813010}
+  - component: {fileID: 2560633990794195528}
   m_Layer: 0
   m_Name: Bush18
   m_TagString: Untagged
@@ -5951,6 +6798,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &2560633990794195528
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2560633990794195527}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2565043534433415245
 GameObject:
   m_ObjectHideFlags: 0
@@ -6545,6 +7408,7 @@ GameObject:
   - component: {fileID: 7168665206913838351}
   - component: {fileID: 6108742819368708505}
   - component: {fileID: 3471949567263294691}
+  - component: {fileID: 2905833978712193682}
   m_Layer: 0
   m_Name: Tree110
   m_TagString: Untagged
@@ -6552,6 +7416,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &2905833978712193682
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2905833978712193681}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2908259976403747670
 GameObject:
   m_ObjectHideFlags: 0
@@ -6563,6 +7443,7 @@ GameObject:
   - component: {fileID: 2718401297106311678}
   - component: {fileID: 7981338157811508957}
   - component: {fileID: 7379291376028250578}
+  - component: {fileID: 2908259976403747671}
   m_Layer: 0
   m_Name: Tree78
   m_TagString: Untagged
@@ -6570,6 +7451,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &2908259976403747671
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2908259976403747670}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2915127500999703563
 GameObject:
   m_ObjectHideFlags: 0
@@ -6624,6 +7521,7 @@ GameObject:
   - component: {fileID: 4554443894489179246}
   - component: {fileID: 9202631617042401992}
   - component: {fileID: 8103142739349839808}
+  - component: {fileID: 2920315967825377903}
   m_Layer: 0
   m_Name: Tree5
   m_TagString: Untagged
@@ -6631,6 +7529,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &2920315967825377903
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2920315967825377902}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &2932408958530553405
 Transform:
   m_ObjectHideFlags: 0
@@ -6715,6 +7629,7 @@ GameObject:
   - component: {fileID: 539014623997120480}
   - component: {fileID: 4632466252309041589}
   - component: {fileID: 6715722758509232601}
+  - component: {fileID: 2937534888829304329}
   m_Layer: 0
   m_Name: Tree94
   m_TagString: Untagged
@@ -6722,6 +7637,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &2937534888829304329
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2937534888829304328}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &2945377023001191833
 Transform:
   m_ObjectHideFlags: 0
@@ -6779,6 +7710,7 @@ GameObject:
   - component: {fileID: 5291558251772171794}
   - component: {fileID: 3230983197842431824}
   - component: {fileID: 4923536243623719511}
+  - component: {fileID: 2968477517614360585}
   m_Layer: 0
   m_Name: Bush31
   m_TagString: Untagged
@@ -6786,6 +7718,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &2968477517614360585
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2968477517614360584}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &2986500229145118005
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6833,6 +7781,7 @@ GameObject:
   - component: {fileID: 3795998180726848024}
   - component: {fileID: 2122427427689139247}
   - component: {fileID: 8068889346966352764}
+  - component: {fileID: 2989868663112112198}
   m_Layer: 0
   m_Name: Tree109
   m_TagString: Untagged
@@ -6840,6 +7789,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &2989868663112112198
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2989868663112112197}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &2999999114760449346
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6935,6 +7900,7 @@ GameObject:
   - component: {fileID: 3157315842687497066}
   - component: {fileID: 2055674170539024652}
   - component: {fileID: 3000061874881054450}
+  - component: {fileID: 3004634552374792754}
   m_Layer: 0
   m_Name: Tree92
   m_TagString: Untagged
@@ -6942,6 +7908,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &3004634552374792754
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3004634552374792753}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &3005724144104861389
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7009,6 +7991,7 @@ GameObject:
   - component: {fileID: 2579629814108160735}
   - component: {fileID: 803287800947791063}
   - component: {fileID: 4063601429714417280}
+  - component: {fileID: 3022560696870821926}
   m_Layer: 0
   m_Name: Bush21
   m_TagString: Untagged
@@ -7016,6 +7999,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &3022560696870821926
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3022560696870821925}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &3034700595623384162
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7122,6 +8121,7 @@ GameObject:
   - component: {fileID: 7920937384619936253}
   - component: {fileID: 7553721296958578395}
   - component: {fileID: 343795145644038500}
+  - component: {fileID: 3089968012101619875}
   m_Layer: 0
   m_Name: Bush111
   m_TagString: Untagged
@@ -7129,6 +8129,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &3089968012101619875
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3089968012101619874}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3093376560709983331
 GameObject:
   m_ObjectHideFlags: 0
@@ -7140,6 +8156,7 @@ GameObject:
   - component: {fileID: 1640883384072575174}
   - component: {fileID: 6307655550135082448}
   - component: {fileID: 2245085636122913163}
+  - component: {fileID: 3093376560709983332}
   m_Layer: 0
   m_Name: Bush53
   m_TagString: Untagged
@@ -7147,6 +8164,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &3093376560709983332
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093376560709983331}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3105437631738828963
 GameObject:
   m_ObjectHideFlags: 0
@@ -7404,6 +8437,7 @@ GameObject:
   - component: {fileID: 7679627570007489285}
   - component: {fileID: 7721589005990456596}
   - component: {fileID: 1150136669252482658}
+  - component: {fileID: 3261692076844792354}
   m_Layer: 0
   m_Name: Bush102
   m_TagString: Untagged
@@ -7411,6 +8445,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &3261692076844792354
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3261692076844792353}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &3269402842535102475
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7783,6 +8833,7 @@ GameObject:
   - component: {fileID: 1280978749872075857}
   - component: {fileID: 4090574244185252019}
   - component: {fileID: 5380536556919657916}
+  - component: {fileID: 3376853588285035875}
   m_Layer: 0
   m_Name: Bush70
   m_TagString: Untagged
@@ -7790,6 +8841,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &3376853588285035875
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3376853588285035874}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3377494387559886571
 GameObject:
   m_ObjectHideFlags: 0
@@ -7801,6 +8868,7 @@ GameObject:
   - component: {fileID: 7828748844158782964}
   - component: {fileID: 8243828237185831719}
   - component: {fileID: 1651064783863478630}
+  - component: {fileID: 3377494387559886572}
   m_Layer: 0
   m_Name: Bush41
   m_TagString: Untagged
@@ -7808,6 +8876,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &3377494387559886572
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3377494387559886571}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &3378272835836030141
 Transform:
   m_ObjectHideFlags: 0
@@ -8051,6 +9135,7 @@ GameObject:
   - component: {fileID: 2542617643460440009}
   - component: {fileID: 5883278056197688044}
   - component: {fileID: 1413017958790667600}
+  - component: {fileID: 3482042615213582697}
   m_Layer: 0
   m_Name: Tree56
   m_TagString: Untagged
@@ -8058,6 +9143,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &3482042615213582697
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482042615213582696}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3499506809807712387
 GameObject:
   m_ObjectHideFlags: 0
@@ -8069,6 +9170,7 @@ GameObject:
   - component: {fileID: 8702045647714938846}
   - component: {fileID: 127282007329626358}
   - component: {fileID: 6502023921959787815}
+  - component: {fileID: 3499506809807712388}
   m_Layer: 0
   m_Name: Tree28
   m_TagString: Untagged
@@ -8076,6 +9178,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &3499506809807712388
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3499506809807712387}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3500963062372564134
 GameObject:
   m_ObjectHideFlags: 0
@@ -8119,6 +9237,7 @@ GameObject:
   - component: {fileID: 5599260998363638187}
   - component: {fileID: 8324678321000914529}
   - component: {fileID: 5837927215044443046}
+  - component: {fileID: 3514206842759028488}
   m_Layer: 0
   m_Name: Tree117
   m_TagString: Untagged
@@ -8126,6 +9245,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &3514206842759028488
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3514206842759028487}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &3516499502086741539
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8235,6 +9370,7 @@ GameObject:
   - component: {fileID: 843910780961165638}
   - component: {fileID: 311397485245074916}
   - component: {fileID: 6009831437180815417}
+  - component: {fileID: 3525041992889082294}
   m_Layer: 0
   m_Name: Bush5
   m_TagString: Untagged
@@ -8242,6 +9378,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &3525041992889082294
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3525041992889082293}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &3549808619787235808
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8389,6 +9541,7 @@ GameObject:
   - component: {fileID: 1976494523438911894}
   - component: {fileID: 2438455520534810117}
   - component: {fileID: 7591587813218026703}
+  - component: {fileID: 3599153866377081882}
   m_Layer: 0
   m_Name: Bush104
   m_TagString: Untagged
@@ -8396,6 +9549,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &3599153866377081882
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3599153866377081881}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &3605960595094327353
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8738,6 +9907,7 @@ GameObject:
   - component: {fileID: 1032774611472870472}
   - component: {fileID: 7049647893069212789}
   - component: {fileID: 8831775480651519593}
+  - component: {fileID: 3782160680356578698}
   m_Layer: 0
   m_Name: Bush16
   m_TagString: Untagged
@@ -8745,6 +9915,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &3782160680356578698
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3782160680356578697}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &3795998180726848024
 Transform:
   m_ObjectHideFlags: 0
@@ -8868,6 +10054,7 @@ GameObject:
   - component: {fileID: 919180938021567768}
   - component: {fileID: 6441522300765385221}
   - component: {fileID: 8827777049817914823}
+  - component: {fileID: 3856914086376757233}
   m_Layer: 0
   m_Name: Bush10
   m_TagString: Untagged
@@ -8875,6 +10062,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &3856914086376757233
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3856914086376757232}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &3861090415354285040
 Transform:
   m_ObjectHideFlags: 0
@@ -9167,6 +10370,7 @@ GameObject:
   - component: {fileID: 8622719755539247797}
   - component: {fileID: 8548602478119223745}
   - component: {fileID: 6041259560648287779}
+  - component: {fileID: 4038850336337091710}
   m_Layer: 0
   m_Name: Bush45
   m_TagString: Untagged
@@ -9174,6 +10378,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &4038850336337091710
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4038850336337091709}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &4052209910438163257
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9264,6 +10484,7 @@ GameObject:
   - component: {fileID: 8354973621198341311}
   - component: {fileID: 4537647759533562712}
   - component: {fileID: 3305595527007275691}
+  - component: {fileID: 4088185539764940073}
   m_Layer: 0
   m_Name: Bush74
   m_TagString: Untagged
@@ -9271,6 +10492,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &4088185539764940073
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4088185539764940072}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &4090574244185252019
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9304,6 +10541,7 @@ GameObject:
   - component: {fileID: 3719081514242247303}
   - component: {fileID: 5865674301819156146}
   - component: {fileID: 2314051786323875537}
+  - component: {fileID: 4120461965978426311}
   m_Layer: 0
   m_Name: Bush85
   m_TagString: Untagged
@@ -9311,6 +10549,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &4120461965978426311
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4120461965978426310}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &4126927495241036639
 GameObject:
   m_ObjectHideFlags: 0
@@ -9508,6 +10762,7 @@ GameObject:
   - component: {fileID: 8246049237734258725}
   - component: {fileID: 7471971939985705575}
   - component: {fileID: 4895091182042565217}
+  - component: {fileID: 4220317436646336311}
   m_Layer: 0
   m_Name: Tree6
   m_TagString: Untagged
@@ -9515,6 +10770,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &4220317436646336311
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4220317436646336310}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &4224432688815855442
 GameObject:
   m_ObjectHideFlags: 0
@@ -9544,6 +10815,7 @@ GameObject:
   - component: {fileID: 6994240814346526322}
   - component: {fileID: 2903049766194159935}
   - component: {fileID: 5553439850348316280}
+  - component: {fileID: 4225403758244933549}
   m_Layer: 0
   m_Name: Tree95
   m_TagString: Untagged
@@ -9551,6 +10823,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &4225403758244933549
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4225403758244933548}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &4237484489915936181
 Transform:
   m_ObjectHideFlags: 0
@@ -9612,6 +10900,7 @@ GameObject:
   - component: {fileID: 6370995400816850960}
   - component: {fileID: 4361838027566970075}
   - component: {fileID: 8721538176230578378}
+  - component: {fileID: 4282209059818717988}
   m_Layer: 0
   m_Name: Bush83
   m_TagString: Untagged
@@ -9619,6 +10908,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &4282209059818717988
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4282209059818717987}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &4288163946570141702
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9797,6 +11102,7 @@ GameObject:
   - component: {fileID: 4602819284418877031}
   - component: {fileID: 4010146608258836175}
   - component: {fileID: 2006970422592066651}
+  - component: {fileID: 4355931376778156402}
   m_Layer: 0
   m_Name: Bush37
   m_TagString: Untagged
@@ -9804,6 +11110,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &4355931376778156402
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4355931376778156401}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &4361838027566970075
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9906,6 +11228,7 @@ GameObject:
   - component: {fileID: 6175845560782325687}
   - component: {fileID: 8931051326289009792}
   - component: {fileID: 6018539426777440263}
+  - component: {fileID: 4402165973953876387}
   m_Layer: 0
   m_Name: Bush81
   m_TagString: Untagged
@@ -9913,6 +11236,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &4402165973953876387
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4402165973953876386}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &4421961204303308290
 GameObject:
   m_ObjectHideFlags: 0
@@ -9924,6 +11263,7 @@ GameObject:
   - component: {fileID: 2633108736267464936}
   - component: {fileID: 133581126490760029}
   - component: {fileID: 7599278729021413488}
+  - component: {fileID: 4421961204303308291}
   m_Layer: 0
   m_Name: Tree118
   m_TagString: Untagged
@@ -9931,6 +11271,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &4421961204303308291
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4421961204303308290}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &4425824992627945938
 Transform:
   m_ObjectHideFlags: 0
@@ -10000,6 +11356,7 @@ GameObject:
   - component: {fileID: 2377087725901396766}
   - component: {fileID: 6225257265585210553}
   - component: {fileID: 1239914482334588787}
+  - component: {fileID: 4451482423980398015}
   m_Layer: 0
   m_Name: Bush40
   m_TagString: Untagged
@@ -10007,6 +11364,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &4451482423980398015
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4451482423980398014}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &4461970586962238743
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10618,6 +11991,7 @@ GameObject:
   - component: {fileID: 1906928607448419070}
   - component: {fileID: 190056024713810650}
   - component: {fileID: 4635625922501951002}
+  - component: {fileID: 4749648784299765972}
   m_Layer: 0
   m_Name: Bush103
   m_TagString: Untagged
@@ -10625,6 +11999,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &4749648784299765972
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4749648784299765971}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &4769773642934398587
 GameObject:
   m_ObjectHideFlags: 0
@@ -10636,6 +12026,7 @@ GameObject:
   - component: {fileID: 3572386135449355154}
   - component: {fileID: 3759938716048034425}
   - component: {fileID: 4022616737872777064}
+  - component: {fileID: 4769773642934398588}
   m_Layer: 0
   m_Name: Tree61
   m_TagString: Untagged
@@ -10643,6 +12034,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &4769773642934398588
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4769773642934398587}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &4783216147378071016
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10690,6 +12097,7 @@ GameObject:
   - component: {fileID: 6876598806733777232}
   - component: {fileID: 3751773616042914435}
   - component: {fileID: 761994964995046348}
+  - component: {fileID: 4828722953481062939}
   m_Layer: 0
   m_Name: Bush95
   m_TagString: Untagged
@@ -10697,6 +12105,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &4828722953481062939
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4828722953481062938}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &4859927737974554234
 Transform:
   m_ObjectHideFlags: 0
@@ -10802,6 +12226,7 @@ GameObject:
   - component: {fileID: 5456782684101539685}
   - component: {fileID: 6913933988042063221}
   - component: {fileID: 8892581632094991650}
+  - component: {fileID: 4916658481356725121}
   m_Layer: 0
   m_Name: Bush7
   m_TagString: Untagged
@@ -10809,6 +12234,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &4916658481356725121
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916658481356725120}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &4923536243623719511
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10861,6 +12302,7 @@ GameObject:
   - component: {fileID: 6567123847776528680}
   - component: {fileID: 3746999463127759771}
   - component: {fileID: 7713234932723064633}
+  - component: {fileID: 4924915039534537610}
   m_Layer: 0
   m_Name: Bush50
   m_TagString: Untagged
@@ -10868,6 +12310,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &4924915039534537610
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4924915039534537609}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &4930374829360754898
 Transform:
   m_ObjectHideFlags: 0
@@ -11186,6 +12644,7 @@ GameObject:
   - component: {fileID: 2957879915345989124}
   - component: {fileID: 1596207906511189622}
   - component: {fileID: 7524200844470139613}
+  - component: {fileID: 5013162183496570834}
   m_Layer: 0
   m_Name: Tree112
   m_TagString: Untagged
@@ -11193,6 +12652,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &5013162183496570834
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5013162183496570833}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &5019526268772521367
 GameObject:
   m_ObjectHideFlags: 0
@@ -11264,6 +12739,7 @@ GameObject:
   - component: {fileID: 4211165594188079433}
   - component: {fileID: 2428019005015734117}
   - component: {fileID: 1706903003409756222}
+  - component: {fileID: 5029280929838580680}
   m_Layer: 0
   m_Name: Bush91
   m_TagString: Untagged
@@ -11271,6 +12747,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &5029280929838580680
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5029280929838580679}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &5041157947562469916
 GameObject:
   m_ObjectHideFlags: 0
@@ -11685,6 +13177,7 @@ GameObject:
   - component: {fileID: 1121564007705008183}
   - component: {fileID: 8194046876793056264}
   - component: {fileID: 4461970586962238743}
+  - component: {fileID: 5258568929219799679}
   m_Layer: 0
   m_Name: Bush112
   m_TagString: Untagged
@@ -11692,6 +13185,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &5258568929219799679
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5258568929219799678}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &5268760911701491860
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11789,6 +13298,7 @@ GameObject:
   - component: {fileID: 5052451353579163635}
   - component: {fileID: 8535328314879290396}
   - component: {fileID: 5115428158617504612}
+  - component: {fileID: 5316714385669054794}
   m_Layer: 0
   m_Name: Tree60
   m_TagString: Untagged
@@ -11796,6 +13306,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &5316714385669054794
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5316714385669054793}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &5330801340650700892
 GameObject:
   m_ObjectHideFlags: 0
@@ -11807,6 +13333,7 @@ GameObject:
   - component: {fileID: 7665529862294662372}
   - component: {fileID: 5915930501169063319}
   - component: {fileID: 8047395317823410903}
+  - component: {fileID: 5330801340650700893}
   m_Layer: 0
   m_Name: Bush62
   m_TagString: Untagged
@@ -11814,6 +13341,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &5330801340650700893
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5330801340650700892}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &5371607595217943046
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11882,6 +13425,7 @@ GameObject:
   - component: {fileID: 2861782127358645136}
   - component: {fileID: 6490110836117630796}
   - component: {fileID: 9004321779078252103}
+  - component: {fileID: 5406808489236231808}
   m_Layer: 0
   m_Name: Bush17
   m_TagString: Untagged
@@ -11889,6 +13433,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &5406808489236231808
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5406808489236231807}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &5406814461733573290
 Transform:
   m_ObjectHideFlags: 0
@@ -12284,6 +13844,7 @@ GameObject:
   - component: {fileID: 3503283529416526129}
   - component: {fileID: 7268822322573996102}
   - component: {fileID: 8986466698455329027}
+  - component: {fileID: 5588858203638777684}
   m_Layer: 0
   m_Name: Tree17
   m_TagString: Untagged
@@ -12291,6 +13852,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &5588858203638777684
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5588858203638777683}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &5589294514912894303
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12310,6 +13887,7 @@ GameObject:
   - component: {fileID: 4237484489915936181}
   - component: {fileID: 5122885077557693776}
   - component: {fileID: 4993560595093680005}
+  - component: {fileID: 5590661857255185087}
   m_Layer: 0
   m_Name: Bush13
   m_TagString: Untagged
@@ -12317,6 +13895,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &5590661857255185087
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5590661857255185086}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &5599260998363638187
 Transform:
   m_ObjectHideFlags: 0
@@ -12485,6 +14079,7 @@ GameObject:
   - component: {fileID: 4662372337049946005}
   - component: {fileID: 4063617309062280285}
   - component: {fileID: 456709201230717085}
+  - component: {fileID: 5697746523745282592}
   m_Layer: 0
   m_Name: Tree108
   m_TagString: Untagged
@@ -12492,6 +14087,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &5697746523745282592
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5697746523745282591}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &5701630609912104889
 GameObject:
   m_ObjectHideFlags: 0
@@ -12503,6 +14114,7 @@ GameObject:
   - component: {fileID: 6672371494763239365}
   - component: {fileID: 7717102693263880095}
   - component: {fileID: 2804830210437327906}
+  - component: {fileID: 5701630609912104890}
   m_Layer: 0
   m_Name: Bush69
   m_TagString: Untagged
@@ -12510,6 +14122,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &5701630609912104890
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5701630609912104889}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &5704339335201954645
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12561,6 +14189,7 @@ GameObject:
   - component: {fileID: 793318281933242048}
   - component: {fileID: 6840008694208823309}
   - component: {fileID: 2006563353120249287}
+  - component: {fileID: 5761364145662133958}
   m_Layer: 0
   m_Name: Tree32
   m_TagString: Untagged
@@ -12568,6 +14197,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &5761364145662133958
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5761364145662133957}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &5776729536563480011
 GameObject:
   m_ObjectHideFlags: 0
@@ -12639,6 +14284,7 @@ GameObject:
   - component: {fileID: 3059156599741739414}
   - component: {fileID: 634849497138461285}
   - component: {fileID: 7544813201781767660}
+  - component: {fileID: 5825057592699798634}
   m_Layer: 0
   m_Name: Bush93
   m_TagString: Untagged
@@ -12646,6 +14292,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &5825057592699798634
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5825057592699798633}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &5837927215044443046
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12713,6 +14375,7 @@ GameObject:
   - component: {fileID: 6007450729868056521}
   - component: {fileID: 8070237340245175528}
   - component: {fileID: 4335460399631867613}
+  - component: {fileID: 5860705878473702270}
   m_Layer: 0
   m_Name: Bush15
   m_TagString: Untagged
@@ -12720,6 +14383,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &5860705878473702270
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5860705878473702269}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &5865674301819156146
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12739,6 +14418,7 @@ GameObject:
   - component: {fileID: 8338918293477570801}
   - component: {fileID: 2654916791322336052}
   - component: {fileID: 7527230327179195616}
+  - component: {fileID: 5877996261895585656}
   m_Layer: 0
   m_Name: Bush6
   m_TagString: Untagged
@@ -12746,6 +14426,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &5877996261895585656
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5877996261895585655}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &5879052353378400176
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12773,6 +14469,7 @@ GameObject:
   - component: {fileID: 4449488803421530394}
   - component: {fileID: 9039786400365906098}
   - component: {fileID: 8513352267375474385}
+  - component: {fileID: 5884630343177444076}
   m_Layer: 0
   m_Name: Bush27
   m_TagString: Untagged
@@ -12780,6 +14477,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &5884630343177444076
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5884630343177444075}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &5898710694423451041
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12799,6 +14512,7 @@ GameObject:
   - component: {fileID: 7133721849425268174}
   - component: {fileID: 5961530695804406486}
   - component: {fileID: 9000457648664417980}
+  - component: {fileID: 5914874431802378878}
   m_Layer: 0
   m_Name: Tree86
   m_TagString: Untagged
@@ -12806,6 +14520,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &5914874431802378878
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5914874431802378877}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &5915930501169063319
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12853,6 +14583,7 @@ GameObject:
   - component: {fileID: 2705735612715358323}
   - component: {fileID: 2260801969365502688}
   - component: {fileID: 1523880679469218511}
+  - component: {fileID: 5931284439004708212}
   m_Layer: 0
   m_Name: Bush8
   m_TagString: Untagged
@@ -12860,6 +14591,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &5931284439004708212
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5931284439004708211}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &5939871389843719514
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -13186,6 +14933,7 @@ GameObject:
   - component: {fileID: 6872523332685803387}
   - component: {fileID: 5650782025153609313}
   - component: {fileID: 1077841143572654182}
+  - component: {fileID: 6063038093331163377}
   m_Layer: 0
   m_Name: Bush2
   m_TagString: Untagged
@@ -13193,6 +14941,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &6063038093331163377
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6063038093331163376}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &6080854077779258734
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13302,6 +15066,7 @@ GameObject:
   - component: {fileID: 3378272835836030141}
   - component: {fileID: 7362075402034208926}
   - component: {fileID: 1176460378235368054}
+  - component: {fileID: 6126083480359094044}
   m_Layer: 0
   m_Name: Bush86
   m_TagString: Untagged
@@ -13309,6 +15074,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &6126083480359094044
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6126083480359094043}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &6133011305635630223
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -13328,6 +15109,7 @@ GameObject:
   - component: {fileID: 3710794591545471394}
   - component: {fileID: 8147515508911694585}
   - component: {fileID: 5206469736453455780}
+  - component: {fileID: 6141080885442824113}
   m_Layer: 0
   m_Name: Bush48
   m_TagString: Untagged
@@ -13335,6 +15117,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &6141080885442824113
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6141080885442824112}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &6152364645092203557
 GameObject:
   m_ObjectHideFlags: 0
@@ -13346,6 +15144,7 @@ GameObject:
   - component: {fileID: 3522850623286705056}
   - component: {fileID: 6841905648071100359}
   - component: {fileID: 8391283637612128279}
+  - component: {fileID: 6152364645092203558}
   m_Layer: 0
   m_Name: Tree97
   m_TagString: Untagged
@@ -13353,6 +15152,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &6152364645092203558
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6152364645092203557}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &6156741330615712938
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -13508,6 +15323,7 @@ GameObject:
   - component: {fileID: 5204961859944955716}
   - component: {fileID: 8481809550276242062}
   - component: {fileID: 8728113657132802532}
+  - component: {fileID: 6241776508182494274}
   m_Layer: 0
   m_Name: Bush54
   m_TagString: Untagged
@@ -13515,6 +15331,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &6241776508182494274
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6241776508182494273}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &6261280733169647682
 GameObject:
   m_ObjectHideFlags: 0
@@ -13526,6 +15358,7 @@ GameObject:
   - component: {fileID: 4116359417829055357}
   - component: {fileID: 6156741330615712938}
   - component: {fileID: 4706696300719480942}
+  - component: {fileID: 6261280733169647683}
   m_Layer: 0
   m_Name: Bush89
   m_TagString: Untagged
@@ -13533,6 +15366,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &6261280733169647683
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6261280733169647682}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &6307655550135082448
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -13732,6 +15581,7 @@ GameObject:
   - component: {fileID: 8768695171469752944}
   - component: {fileID: 8794506588288953544}
   - component: {fileID: 1535385296809501124}
+  - component: {fileID: 6397248727141512375}
   m_Layer: 0
   m_Name: Bush57
   m_TagString: Untagged
@@ -13739,6 +15589,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &6397248727141512375
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6397248727141512374}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &6400170769202692665
 Transform:
   m_ObjectHideFlags: 0
@@ -13919,6 +15785,7 @@ GameObject:
   - component: {fileID: 2847956151317549602}
   - component: {fileID: 6133011305635630223}
   - component: {fileID: 6322260850641112714}
+  - component: {fileID: 6472998582027763584}
   m_Layer: 0
   m_Name: Bush65
   m_TagString: Untagged
@@ -13926,6 +15793,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &6472998582027763584
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6472998582027763583}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &6490110836117630796
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14102,6 +15985,7 @@ GameObject:
   - component: {fileID: 3953041666732820458}
   - component: {fileID: 4472962205005561210}
   - component: {fileID: 3554307881216902962}
+  - component: {fileID: 6563705633549078398}
   m_Layer: 0
   m_Name: Tree101
   m_TagString: Untagged
@@ -14109,6 +15993,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &6563705633549078398
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563705633549078397}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &6567123847776528680
 Transform:
   m_ObjectHideFlags: 0
@@ -14411,6 +16311,7 @@ GameObject:
   - component: {fileID: 5445375056646264157}
   - component: {fileID: 1484040174599683863}
   - component: {fileID: 2799099829563281596}
+  - component: {fileID: 6738368325826846963}
   m_Layer: 0
   m_Name: Bush94
   m_TagString: Untagged
@@ -14418,6 +16319,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &6738368325826846963
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6738368325826846962}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &6746942915913204612
 GameObject:
   m_ObjectHideFlags: 0
@@ -14429,6 +16346,7 @@ GameObject:
   - component: {fileID: 2986641552484043197}
   - component: {fileID: 7596471304422938278}
   - component: {fileID: 2932847913651410931}
+  - component: {fileID: 6746942915913204613}
   m_Layer: 0
   m_Name: Bush84
   m_TagString: Untagged
@@ -14436,6 +16354,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &6746942915913204613
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6746942915913204612}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &6750640677543728581
 GameObject:
   m_ObjectHideFlags: 0
@@ -14447,6 +16381,7 @@ GameObject:
   - component: {fileID: 6400170769202692665}
   - component: {fileID: 4288163946570141702}
   - component: {fileID: 2705855092106686449}
+  - component: {fileID: 6750640677543728582}
   m_Layer: 0
   m_Name: Tree58
   m_TagString: Untagged
@@ -14454,6 +16389,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &6750640677543728582
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6750640677543728581}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &6756430898969166529
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14473,6 +16424,7 @@ GameObject:
   - component: {fileID: 1171563344500650874}
   - component: {fileID: 7096578847866748061}
   - component: {fileID: 399422293682236684}
+  - component: {fileID: 6782052135154279376}
   m_Layer: 0
   m_Name: Bush75
   m_TagString: Untagged
@@ -14480,6 +16432,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!208 &6782052135154279376
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6782052135154279375}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &6791736303939610112
 Transform:
   m_ObjectHideFlags: 0
@@ -14712,6 +16680,7 @@ GameObject:
   - component: {fileID: 467273404998488519}
   - component: {fileID: 6847286182760570213}
   - component: {fileID: 2731076775205043457}
+  - component: {fileID: 6843031971094331142}
   m_Layer: 0
   m_Name: Bush25
   m_TagString: Untagged
@@ -14719,6 +16688,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &6843031971094331142
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6843031971094331141}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &6846896179387699606
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14821,6 +16806,7 @@ GameObject:
   - component: {fileID: 2932408958530553405}
   - component: {fileID: 4317729095396663095}
   - component: {fileID: 7827928962925800882}
+  - component: {fileID: 6862219289409719037}
   m_Layer: 0
   m_Name: Bush49
   m_TagString: Untagged
@@ -14828,6 +16814,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &6862219289409719037
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6862219289409719036}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &6863345946927047648
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15043,6 +17045,7 @@ GameObject:
   - component: {fileID: 38059471482198294}
   - component: {fileID: 1868362051063940050}
   - component: {fileID: 9151107251793224274}
+  - component: {fileID: 6921683158994418787}
   m_Layer: 0
   m_Name: Bush30
   m_TagString: Untagged
@@ -15050,6 +17053,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &6921683158994418787
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6921683158994418786}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &6929191237320536508
 Transform:
   m_ObjectHideFlags: 0
@@ -15216,6 +17235,7 @@ GameObject:
   - component: {fileID: 2276039729738486875}
   - component: {fileID: 1333179469980002851}
   - component: {fileID: 4378513103024164600}
+  - component: {fileID: 6999566669192820834}
   m_Layer: 0
   m_Name: Bush106
   m_TagString: Untagged
@@ -15223,6 +17243,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &6999566669192820834
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6999566669192820833}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &7034866625093713411
 Transform:
   m_ObjectHideFlags: 0
@@ -15320,6 +17356,7 @@ GameObject:
   - component: {fileID: 5738269385442343992}
   - component: {fileID: 6657439017990192106}
   - component: {fileID: 1543274232123662642}
+  - component: {fileID: 7080944252449422215}
   m_Layer: 0
   m_Name: Bush90
   m_TagString: Untagged
@@ -15327,6 +17364,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &7080944252449422215
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7080944252449422214}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &7096578847866748061
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15509,6 +17562,7 @@ GameObject:
   - component: {fileID: 1356027877760344581}
   - component: {fileID: 2245870478526558265}
   - component: {fileID: 8857684659043140914}
+  - component: {fileID: 7192164423369722570}
   m_Layer: 0
   m_Name: Bush72
   m_TagString: Untagged
@@ -15516,6 +17570,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &7192164423369722570
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7192164423369722569}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &7204060650822245880
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15608,6 +17678,7 @@ GameObject:
   - component: {fileID: 9111816700875668700}
   - component: {fileID: 8040746496603187886}
   - component: {fileID: 6880577617572398172}
+  - component: {fileID: 7225651989457524011}
   m_Layer: 0
   m_Name: Bush59
   m_TagString: Untagged
@@ -15615,6 +17686,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &7225651989457524011
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7225651989457524010}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &7225828750506193672
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15868,6 +17955,7 @@ GameObject:
   - component: {fileID: 3741722916525210646}
   - component: {fileID: 8951546596746255357}
   - component: {fileID: 6431405086072965846}
+  - component: {fileID: 7276272667860699517}
   m_Layer: 0
   m_Name: Bush52
   m_TagString: Untagged
@@ -15875,6 +17963,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &7276272667860699517
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7276272667860699516}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7281804731296832915
 GameObject:
   m_ObjectHideFlags: 0
@@ -15904,6 +18008,7 @@ GameObject:
   - component: {fileID: 1305312053100730443}
   - component: {fileID: 174228386088177613}
   - component: {fileID: 3269402842535102475}
+  - component: {fileID: 7282297278387067365}
   m_Layer: 0
   m_Name: Bush87
   m_TagString: Untagged
@@ -15911,6 +18016,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &7282297278387067365
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7282297278387067364}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &7286245259844876469
 Transform:
   m_ObjectHideFlags: 0
@@ -16000,6 +18121,7 @@ GameObject:
   - component: {fileID: 4612745192848099853}
   - component: {fileID: 323633680049962817}
   - component: {fileID: 7594525010157223982}
+  - component: {fileID: 7344753130962411057}
   m_Layer: 0
   m_Name: Bush64
   m_TagString: Untagged
@@ -16007,6 +18129,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &7344753130962411057
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7344753130962411056}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &7362075402034208926
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16210,6 +18348,7 @@ GameObject:
   - component: {fileID: 4438461943151802326}
   - component: {fileID: 4686420389690883954}
   - component: {fileID: 7218921351534555549}
+  - component: {fileID: 7508671220911515505}
   m_Layer: 0
   m_Name: Bush35
   m_TagString: Untagged
@@ -16217,6 +18356,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &7508671220911515505
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7508671220911515504}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &7524200844470139613
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16611,6 +18766,7 @@ GameObject:
   - component: {fileID: 3850888829923480239}
   - component: {fileID: 2421585151961211780}
   - component: {fileID: 8171649875742213619}
+  - component: {fileID: 7642811619617496017}
   m_Layer: 0
   m_Name: Tree79
   m_TagString: Untagged
@@ -16618,6 +18774,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &7642811619617496017
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7642811619617496016}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7649887266035775624
 GameObject:
   m_ObjectHideFlags: 0
@@ -16629,6 +18801,7 @@ GameObject:
   - component: {fileID: 5924673433333360520}
   - component: {fileID: 4338282297697040904}
   - component: {fileID: 1031289356194845570}
+  - component: {fileID: 7649887266035775625}
   m_Layer: 0
   m_Name: Bush71
   m_TagString: Untagged
@@ -16636,6 +18809,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!208 &7649887266035775625
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7649887266035775624}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &7665529862294662372
 Transform:
   m_ObjectHideFlags: 0
@@ -16661,6 +18850,7 @@ GameObject:
   - component: {fileID: 2945377023001191833}
   - component: {fileID: 2568830402381301256}
   - component: {fileID: 7445291932279687828}
+  - component: {fileID: 7666708091419140574}
   m_Layer: 0
   m_Name: Bush105
   m_TagString: Untagged
@@ -16668,6 +18858,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &7666708091419140574
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7666708091419140573}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &7679627570007489285
 Transform:
   m_ObjectHideFlags: 0
@@ -16693,6 +18899,7 @@ GameObject:
   - component: {fileID: 1284271323901182596}
   - component: {fileID: 1997797979634624055}
   - component: {fileID: 3222732378695376936}
+  - component: {fileID: 7692269305509257008}
   m_Layer: 0
   m_Name: Bush44
   m_TagString: Untagged
@@ -16700,6 +18907,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &7692269305509257008
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7692269305509257007}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &7702031484969903488
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16753,6 +18976,7 @@ GameObject:
   - component: {fileID: 819265746391397751}
   - component: {fileID: 5091956593690809055}
   - component: {fileID: 1939369045297788716}
+  - component: {fileID: 7704459361926711139}
   m_Layer: 0
   m_Name: Bush110
   m_TagString: Untagged
@@ -16760,6 +18984,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &7704459361926711139
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7704459361926711138}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &7713234932723064633
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16891,6 +19131,7 @@ GameObject:
   - component: {fileID: 768286378418451803}
   - component: {fileID: 8250373922232630413}
   - component: {fileID: 6387989185812531043}
+  - component: {fileID: 7753645811635005773}
   m_Layer: 0
   m_Name: Tree119
   m_TagString: Untagged
@@ -16898,6 +19139,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &7753645811635005773
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7753645811635005772}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &7756192630546215441
 Transform:
   m_ObjectHideFlags: 0
@@ -16951,6 +19208,7 @@ GameObject:
   - component: {fileID: 4239237915457049816}
   - component: {fileID: 5898710694423451041}
   - component: {fileID: 8478594874026617152}
+  - component: {fileID: 7776383178929116442}
   m_Layer: 0
   m_Name: Tree55
   m_TagString: Untagged
@@ -16958,6 +19216,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &7776383178929116442
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7776383178929116441}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7788767477753559004
 GameObject:
   m_ObjectHideFlags: 0
@@ -17140,6 +19414,7 @@ GameObject:
   - component: {fileID: 1776020367886004203}
   - component: {fileID: 4954239617082516110}
   - component: {fileID: 7382229180305678462}
+  - component: {fileID: 7883528268756481777}
   m_Layer: 0
   m_Name: Bush88
   m_TagString: Untagged
@@ -17147,6 +19422,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &7883528268756481777
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7883528268756481776}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7889243754339545634
 GameObject:
   m_ObjectHideFlags: 0
@@ -17158,6 +19449,7 @@ GameObject:
   - component: {fileID: 6929191237320536508}
   - component: {fileID: 8071528474684990315}
   - component: {fileID: 6422015238331791610}
+  - component: {fileID: 7889243754339545635}
   m_Layer: 0
   m_Name: Tree59
   m_TagString: Untagged
@@ -17165,6 +19457,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &7889243754339545635
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7889243754339545634}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &7894842218340333216
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17184,6 +19492,7 @@ GameObject:
   - component: {fileID: 6796517992332004838}
   - component: {fileID: 243431862383427634}
   - component: {fileID: 8595649161362781613}
+  - component: {fileID: 7907400503919766233}
   m_Layer: 0
   m_Name: Bush55
   m_TagString: Untagged
@@ -17191,6 +19500,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &7907400503919766233
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7907400503919766232}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &7911271969191352279
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17257,6 +19582,7 @@ GameObject:
   - component: {fileID: 5945158589206372855}
   - component: {fileID: 7229217660522085287}
   - component: {fileID: 3687222082271146039}
+  - component: {fileID: 7947374060858520480}
   m_Layer: 0
   m_Name: Bush4
   m_TagString: Untagged
@@ -17264,6 +19590,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &7947374060858520480
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7947374060858520479}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &7955686705478008175
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17333,6 +19675,7 @@ GameObject:
   - component: {fileID: 7304148552235818806}
   - component: {fileID: 3136652757784996382}
   - component: {fileID: 278441462657996986}
+  - component: {fileID: 7984114594965096662}
   m_Layer: 0
   m_Name: Bush63
   m_TagString: Untagged
@@ -17340,6 +19683,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &7984114594965096662
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7984114594965096661}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &7987152591536632102
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17882,6 +20241,7 @@ GameObject:
   - component: {fileID: 5691386167358062762}
   - component: {fileID: 7894842218340333216}
   - component: {fileID: 2027078044242438888}
+  - component: {fileID: 8187454332643382089}
   m_Layer: 0
   m_Name: Tree100
   m_TagString: Untagged
@@ -17889,6 +20249,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &8187454332643382089
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8187454332643382088}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &8193908843703699505
 Transform:
   m_ObjectHideFlags: 0
@@ -18109,13 +20485,30 @@ GameObject:
   - component: {fileID: 4859927737974554234}
   - component: {fileID: 7955686705478008175}
   - component: {fileID: 5477888451195524909}
+  - component: {fileID: 8359413896100045952}
   m_Layer: 0
   m_Name: Tree13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &8359413896100045952
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8359413896100045951}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &8366041385335101591
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18230,6 +20623,7 @@ GameObject:
   - component: {fileID: 3708061467858160649}
   - component: {fileID: 7111499894386255277}
   - component: {fileID: 3970064712139798725}
+  - component: {fileID: 8439398551414892311}
   m_Layer: 0
   m_Name: Bush23
   m_TagString: Untagged
@@ -18237,6 +20631,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &8439398551414892311
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8439398551414892310}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &8440027409892268866
 GameObject:
   m_ObjectHideFlags: 0
@@ -18323,6 +20733,7 @@ GameObject:
   - component: {fileID: 7990605672870985543}
   - component: {fileID: 7413361962296211454}
   - component: {fileID: 4353531912041874369}
+  - component: {fileID: 8464569876812578134}
   m_Layer: 0
   m_Name: Bush101
   m_TagString: Untagged
@@ -18330,6 +20741,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &8464569876812578134
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8464569876812578133}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &8478594874026617152
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18440,6 +20867,7 @@ GameObject:
   - component: {fileID: 6209317578235438473}
   - component: {fileID: 2538507643720197870}
   - component: {fileID: 6881369183728881626}
+  - component: {fileID: 8507670086050871730}
   m_Layer: 0
   m_Name: Tree96
   m_TagString: Untagged
@@ -18447,6 +20875,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &8507670086050871730
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8507670086050871729}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &8513352267375474385
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18599,6 +21043,7 @@ GameObject:
   - component: {fileID: 2282205994247911449}
   - component: {fileID: 7267610569699305032}
   - component: {fileID: 6882582908005377034}
+  - component: {fileID: 8536373228224029269}
   m_Layer: 0
   m_Name: Bush29
   m_TagString: Untagged
@@ -18606,6 +21051,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &8536373228224029269
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8536373228224029268}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &8537852703327450050
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -18866,6 +21327,7 @@ GameObject:
   - component: {fileID: 4425824992627945938}
   - component: {fileID: 2543634971851014313}
   - component: {fileID: 614219209494711453}
+  - component: {fileID: 8672954304806879541}
   m_Layer: 0
   m_Name: Bush66
   m_TagString: Untagged
@@ -18873,6 +21335,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &8672954304806879541
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8672954304806879540}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &8679923332027413691
 Transform:
   m_ObjectHideFlags: 0
@@ -18906,6 +21384,7 @@ GameObject:
   - component: {fileID: 6872642188214088652}
   - component: {fileID: 4348338614879080802}
   - component: {fileID: 1614504243497449896}
+  - component: {fileID: 8690132717544881931}
   m_Layer: 0
   m_Name: Bush22
   m_TagString: Untagged
@@ -18913,6 +21392,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &8690132717544881931
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8690132717544881930}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &8702045647714938846
 Transform:
   m_ObjectHideFlags: 0
@@ -19169,6 +21664,7 @@ GameObject:
   - component: {fileID: 8519304235328408086}
   - component: {fileID: 3413804142881759326}
   - component: {fileID: 8564499292146763570}
+  - component: {fileID: 8827120636023568852}
   m_Layer: 0
   m_Name: Tree80
   m_TagString: Untagged
@@ -19176,6 +21672,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &8827120636023568852
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8827120636023568851}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &8827777049817914823
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19269,6 +21781,7 @@ GameObject:
   - component: {fileID: 4164814458191054636}
   - component: {fileID: 4425957361622052493}
   - component: {fileID: 7113459463194990984}
+  - component: {fileID: 8832423949510282760}
   m_Layer: 0
   m_Name: Bush3
   m_TagString: Untagged
@@ -19276,6 +21789,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &8832423949510282760
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8832423949510282759}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &8835249899386637939
 Transform:
   m_ObjectHideFlags: 0
@@ -19343,6 +21872,7 @@ GameObject:
   - component: {fileID: 5503242509527401034}
   - component: {fileID: 5441463709616085634}
   - component: {fileID: 4999728316948557576}
+  - component: {fileID: 8854321649312036391}
   m_Layer: 0
   m_Name: Bush108
   m_TagString: Untagged
@@ -19350,6 +21880,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &8854321649312036391
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8854321649312036390}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &8857684659043140914
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19612,6 +22158,7 @@ GameObject:
   - component: {fileID: 6049682318605971348}
   - component: {fileID: 425715672241670457}
   - component: {fileID: 5026038556301944532}
+  - component: {fileID: 8976907214402554966}
   m_Layer: 0
   m_Name: Tree11
   m_TagString: Untagged
@@ -19619,6 +22166,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &8976907214402554966
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8976907214402554965}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &8982224575372466371
 GameObject:
   m_ObjectHideFlags: 0
@@ -19795,6 +22358,7 @@ GameObject:
   - component: {fileID: 6630824369225692753}
   - component: {fileID: 449886567271439743}
   - component: {fileID: 6080854077779258734}
+  - component: {fileID: 9035348421104705538}
   m_Layer: 0
   m_Name: Tree116
   m_TagString: Untagged
@@ -19802,6 +22366,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!208 &9035348421104705538
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9035348421104705537}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &9039786400365906098
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -19988,6 +22568,7 @@ GameObject:
   - component: {fileID: 4183360293407038639}
   - component: {fileID: 8400607997707471104}
   - component: {fileID: 1082374759559515020}
+  - component: {fileID: 9134281007914992353}
   m_Layer: 0
   m_Name: Tree18
   m_TagString: Untagged
@@ -19995,6 +22576,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &9134281007914992353
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9134281007914992352}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &9137281621517663071
 GameObject:
   m_ObjectHideFlags: 0
@@ -20024,6 +22621,7 @@ GameObject:
   - component: {fileID: 3832215306187150062}
   - component: {fileID: 754905876039396761}
   - component: {fileID: 7804774840356965035}
+  - component: {fileID: 9145378084309307939}
   m_Layer: 0
   m_Name: Bush19
   m_TagString: Untagged
@@ -20031,6 +22629,22 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967263
   m_IsActive: 1
+--- !u!208 &9145378084309307939
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9145378084309307938}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.54700005, y: 0.49800003, z: 0.522}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &9151107251793224274
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20141,6 +22755,7 @@ GameObject:
   - component: {fileID: 4637381327197584649}
   - component: {fileID: 8537852703327450050}
   - component: {fileID: 1051493654078407712}
+  - component: {fileID: 9218939990574375824}
   m_Layer: 0
   m_Name: Tree19
   m_TagString: Untagged
@@ -20148,3 +22763,19 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!208 &9218939990574375824
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9218939990574375823}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3160001, y: 2.204, z: 1.2900001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
