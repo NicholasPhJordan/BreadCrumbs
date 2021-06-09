@@ -3,7 +3,57 @@ guid: 5d7034b53ee6b9640a60657c252d735b
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HumanBody_blinn1
+    second: {fileID: 2100000, guid: 94b06b205303b294abef70d2280ce395, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TreeAndBushBlockou003_Bush001
+    second: {fileID: 2100000, guid: 94b06b205303b294abef70d2280ce395, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TreeAndBushBlockou003_Bush002
+    second: {fileID: 2100000, guid: 94b06b205303b294abef70d2280ce395, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TreeAndBushBlockou003_Tree001
+    second: {fileID: 2100000, guid: 94b06b205303b294abef70d2280ce395, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TreeAndBushBlockou003_Tree002
+    second: {fileID: 2100000, guid: 94b06b205303b294abef70d2280ce395, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TreeAndBushBlockou003_Tree003
+    second: {fileID: 2100000, guid: 94b06b205303b294abef70d2280ce395, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TreeAndBushBlockou003_Wood001
+    second: {fileID: 2100000, guid: 94b06b205303b294abef70d2280ce395, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Water1
+    second: {fileID: 2100000, guid: 94b06b205303b294abef70d2280ce395, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 94b06b205303b294abef70d2280ce395, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: 94b06b205303b294abef70d2280ce395, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
