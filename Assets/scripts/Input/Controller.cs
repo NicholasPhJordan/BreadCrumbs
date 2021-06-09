@@ -14,7 +14,7 @@ public class Controller : MonoBehaviour
 
     void Start()
     {
-        //grabs the light component to allow change
+        //grabs the body component to allow change
         _body = GetComponent<Rigidbody>();
     }
 

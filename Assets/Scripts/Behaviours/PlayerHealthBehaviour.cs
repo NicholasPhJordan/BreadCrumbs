@@ -8,11 +8,15 @@ public class PlayerHealthBehaviour : MonoBehaviour
     public int healthStrikeLimit = 3;
     public bool playerDidDie = false;
 
+    private Rigidbody _body;
+
     // Start is called before the first frame update
     void Start()
     {
         //this makes sure that each time this scene is called it resets health to 0
         __lives = 0;
+        //grabs body from scene to change
+        _body = GetComponent<Rigidbody>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -28,11 +32,19 @@ public class PlayerHealthBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //first 2 ifs just reset the player position
+        if (__lives == 1 || __lives == 2)
+        {
+            //sets player position where it started
+            _body.position = new Vector3(-2, 2, -7);
+        }
         //we want to give the player 3 hits before game over
-        if (__lives == healthStrikeLimit)
+        else if (__lives == healthStrikeLimit)
         {
             //also temperary, used for testing
             playerDidDie = true;
+            //sets player position back to start
+            _body.position = new Vector3(-2, 2, -7);
             //temperary until we get a Game Over screen
             Application.Quit();
         }
