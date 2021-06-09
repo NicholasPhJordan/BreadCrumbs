@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a589192a458484a47bccef4babb7f40e
+guid: 0c705534c9cbf244e86af2235c588a23
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: b3198ba49f4995d458ebbe6580cb327b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: lambert1
-    second: {fileID: 2100000, guid: 7069b7fb32fc0874eb25f66dde5acef6, type: 2}
+    second: {fileID: 2100000, guid: f139cbbe875ede748ba7fe775078ba23, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -49,7 +54,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
