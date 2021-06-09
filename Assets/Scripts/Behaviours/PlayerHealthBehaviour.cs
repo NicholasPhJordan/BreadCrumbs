@@ -34,6 +34,7 @@ public class PlayerHealthBehaviour : MonoBehaviour
     {
         if(GameOverScreen != null)
         {
+            //this will make the Game Over screen visible
             GameOverScreen.SetActive(true);
         }
     }
@@ -57,7 +58,8 @@ public class PlayerHealthBehaviour : MonoBehaviour
             //temperary until we get a Game Over screen
             Application.Quit();
             //sets Game Over Screen to be true
-            OpenGameOverScreen();
+            //OpenGameOverScreen();
+            //  -----------^ This will be un commented after GameOver screen is made
         }
         else if (__lives > healthStrikeLimit)
             __lives = 0;
