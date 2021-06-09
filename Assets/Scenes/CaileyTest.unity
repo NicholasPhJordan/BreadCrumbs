@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.004075959, g: 0.00022291961, b: 0.00000005659625,
+  m_IndirectSpecularColor: {r: 0.0040537454, g: 0.00022153623, b: 0.000000055419232,
     a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -676,8 +676,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff3869472db17245a2c899dff127244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthStrikeLimit: 3
+  lifeLimit: 3
   playerDidDie: 0
+  _body: {fileID: 0}
+  OverScreen: {fileID: 0}
 --- !u!1 &1412212165
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,8 +919,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
