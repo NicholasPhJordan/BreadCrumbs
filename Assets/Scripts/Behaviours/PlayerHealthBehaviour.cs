@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class PlayerHealthBehaviour : MonoBehaviour
 {
-    private int _healthStrikes;
-    public int healthStrikeLimit = 3;
+    private int _lives;
+    public int lifeLimit = 3;
     public int playerDidDie = 0;
+
+    public Rigidbody _body;
+    public GameObject OverScreen;
 
     // Start is called before the first frame update
     void Start()
     {
         //this makes sure that each time this scene is called it resets health to 0
-        _healthStrikes = 0;
+        _lives = 0;
+        //this will grab the player object
+        _body = GetComponent<Rigidbody>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -21,22 +26,39 @@ public class PlayerHealthBehaviour : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             //this adds a strike to health 
-            _healthStrikes += 1;
+            _lives += 1;
+        }
+    }
+
+    public void GameOverScreen()
+    {
+        //this checks if the Game Over screen in visible or not
+        if(OverScreen != null)
+        {
+            //sets game over screen to be visible
+            OverScreen.SetActive(true);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(_lives == 1 && _lives == 2)
+        {
+            //resets player position
+            _body.position = new Vector3(-1, 2, -7);
+        }
         //we want to give the player 3 hits before game over
-        if (_healthStrikes == healthStrikeLimit)
+        if (_lives == lifeLimit)
         {
             //also temperary, used for testing
             playerDidDie += 1;
-            //temperary until we get a Game Over screen
-            Application.Quit();
+            //resets player position
+            _body.position = new Vector3(-1, 2, -7);
+            //Game Over Screen
+            GameOverScreen();
         }
-        else if (_healthStrikes > healthStrikeLimit)
-            _healthStrikes = 0;
+        else if (_lives > lifeLimit)
+            _lives = 0;
     }
 }
