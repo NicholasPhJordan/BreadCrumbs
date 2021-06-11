@@ -20,6 +20,7 @@ public class EnemyChase : MonoBehaviour
     [SerializeField]
     private float _trackingTimer;
     private float _timer;
+    private int _case;
 
     public GameObject Target
     {
@@ -51,17 +52,23 @@ public class EnemyChase : MonoBehaviour
             return;
 
         //If the target is within a radius from the target, and its speed is greater than 1
-        if (_agent.remainingDistance < 4 && _agent.speed > 1)
+        if (_agent.remainingDistance < 4 && _agent.remainingDistance > 1.5 && _agent.speed > 1)
         {
             //reduce speed by the speed modifier
             _agent.speed -= _speedModifier;
             //Reset the timer in case it was modified
             _timer = _trackingTimer;
 
+            //Decrease the run cooldown the more the enemy gets close to the player
+            if (_agent.remainingDistance < 3)
+            {
+                if (_trackingTimer >= 0)
+                    _trackingTimer -= 1;
+            }
+
             //If the agent's speed somehow drops below 1, catch it
             if (_agent.speed < 1)
                 _agent.speed = 1;
-
         }
         //If the agent is outside the radius while still having a decreased speed
         else if (_agent.remainingDistance > 4 && _agent.speed < _runSpeed)
@@ -77,7 +84,6 @@ public class EnemyChase : MonoBehaviour
                 //Reset the timer for next time
                 _timer = _trackingTimer;
             }
-                
         }
 
         //Set the target's destination for the navmesh
