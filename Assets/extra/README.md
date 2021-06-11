@@ -36,5 +36,3 @@ If you get hit by your enemies three times, its Game Over!
 > Ghost | Temperaily slows down player
 
 ###Where to Play
-
-
