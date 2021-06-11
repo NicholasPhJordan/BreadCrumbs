@@ -9,11 +9,13 @@ public class MenuBehaviour : MonoBehaviour
     private GameObject _pauseMenuUI;
     public static bool GamePaused = false;
 
+    //loads the next scene for the Start button
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    //Quites and closes the game
     public void QuitGame()
     {
         Application.Quit();
@@ -38,6 +40,7 @@ public class MenuBehaviour : MonoBehaviour
         }
     }
 
+    //Unpauses game and closes UI
     public void Resume()
     {
         _pauseMenuUI.SetActive(false);
@@ -45,6 +48,7 @@ public class MenuBehaviour : MonoBehaviour
         GamePaused = false;
     }
 
+    //Pauses game and opens UI
     void Pause()
     {
         _pauseMenuUI.SetActive(true);
