@@ -27,6 +27,7 @@ public class PlayerHealthBehaviour : MonoBehaviour
         {
             //this adds a strike to health 
             _lives += 1;
+            transform.position = new Vector3(-1, 2, -7);
         }
     }
 
@@ -43,18 +44,11 @@ public class PlayerHealthBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_lives == 1 && _lives == 2)
-        {
-            //resets player position
-            _body.position = new Vector3(-1, 2, -7);
-        }
         //we want to give the player 3 hits before game over
         if (_lives == lifeLimit)
         {
             //also temperary, used for testing
             playerDidDie += 1;
-            //resets player position
-            _body.position = new Vector3(-1, 2, -7);
             //Game Over Screen
             GameOverScreen();
         }
