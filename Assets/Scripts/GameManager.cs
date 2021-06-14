@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     [Tooltip("The amount the player must collect to reset Collectibles")]
     [SerializeField]
     private int _collectAmount;
+    [Tooltip("Set to whither or not the game is over")]
+    [SerializeField]
+    public static bool _gameOver = false;
     private static int _playerScore;
 
     public static int PlayerScore

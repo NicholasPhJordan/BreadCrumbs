@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class PlayerHealthBehaviour : MonoBehaviour
 {
-    private int _lives;
+    public int _lives;
     public float _deathTimer = 0.0f;
     public int lifeLimit = 3;
-    public bool playerDidDie = false;
     public float playersMoveSpeed = 0.08f;
     public float playersRotationSpeed = 1000;
     public Controller Player; 
 
     public Rigidbody _body;
     public GameObject OverScreen;
+
+    //varible to hold player starting position
+    private Vector3 homePosition;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,12 @@ public class PlayerHealthBehaviour : MonoBehaviour
         _lives = 0;
         //this will grab the player object
         _body = GetComponent<Rigidbody>();
+
+        //grabs player starting position
+        homePosition = transform.position =
+            new Vector3(transform.position.x, 
+                        transform.position.y, 
+                        transform.position.z);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -37,20 +45,11 @@ public class PlayerHealthBehaviour : MonoBehaviour
         }
     }
 
-    public void GameOverScreen()
-    {
-        //this checks if the Game Over screen in visible or not
-        if(OverScreen != null)
-        {
-            //sets game over screen to be visible
-            OverScreen.SetActive(true);
-        }
-    }
-
     void PlayerPosition()
     {
         _deathTimer = 0;
-        transform.position = new Vector3(-1.5f, 1.84f, -7.07f);
+        //no longer hardset, resets based off player starting position
+        transform.position = homePosition;
         Player.moveSpeed += playersMoveSpeed;
         Player.rotationSpeed += playersRotationSpeed;
     }
@@ -61,10 +60,8 @@ public class PlayerHealthBehaviour : MonoBehaviour
         //we want to give the player 3 hits before game over
         if (_lives == lifeLimit)
         {
-            //also temperary, used for testing
-            playerDidDie = true;
-            //Game Over Screen
-            GameOverScreen();
+            //sets gameOver to true
+            GameManager._gameOver = true;
         }
         else if (_lives > lifeLimit)
             _lives = 0;

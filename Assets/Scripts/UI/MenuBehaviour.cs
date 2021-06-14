@@ -7,6 +7,8 @@ public class MenuBehaviour : MonoBehaviour
 {
     [SerializeField]
     private GameObject _pauseMenuUI;
+    [SerializeField]
+    private GameObject _gameOverUI;
     public static bool GamePaused = false;
     public Animator transition;
 
@@ -14,8 +16,7 @@ public class MenuBehaviour : MonoBehaviour
     public void PlayGame()
     {
         StartCoroutine(
-            LoadLevel(
-                SceneManager.GetActiveScene().buildIndex + 1));
+            LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
         
     }
 
@@ -36,6 +37,14 @@ public class MenuBehaviour : MonoBehaviour
         Application.Quit();
     }
 
+    public void QuitToTitle()
+    {
+        _gameOverUI.SetActive(false);
+        GameManager._gameOver = false;
+        StartCoroutine(
+            LoadLevel(0));
+    }
+
     //Update is called once per frame
     private void Update()
     {
@@ -52,6 +61,11 @@ public class MenuBehaviour : MonoBehaviour
                     Pause();
                 }
             }
+        }
+
+        if(GameManager._gameOver) 
+        { 
+            _gameOverUI.SetActive(true);
         }
     }
 
