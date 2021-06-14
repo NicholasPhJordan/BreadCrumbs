@@ -8,11 +8,26 @@ public class MenuBehaviour : MonoBehaviour
     [SerializeField]
     private GameObject _pauseMenuUI;
     public static bool GamePaused = false;
+    public Animator transition;
 
     //loads the next scene for the Start button
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        StartCoroutine(
+            LoadLevel(
+                SceneManager.GetActiveScene().buildIndex + 1));
+        
+    }
+
+    //changes scene with the fade transition =
+    public IEnumerator LoadLevel(int levelIndex)
+    {
+        //triggers the transition
+        transition.SetTrigger("Start");
+        //waits for 1 second
+        yield return new WaitForSeconds(1);
+        //loads the given scene
+        SceneManager.LoadScene(levelIndex);
     }
 
     //Quites and closes the game
