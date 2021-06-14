@@ -35,7 +35,7 @@ If you get hit by your enemies three times, its Game Over!
 > -------------------------|--------------------------------
 > Slime Bottle | Make Enemy Slow
 > Salt Bottle | Makes Disperse Ghosts
-> Perfume | Disperse Enemies
+> Mud | Disperse Enemies
 > FireFlies | Shows Nearest Crumbs
 
 ![Power Ups Design](Images/PowerUps.png)

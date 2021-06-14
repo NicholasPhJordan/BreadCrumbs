@@ -1,0 +1,96 @@
+| Cailey Marie Bianchini|
+| :---          	|
+| Hunter, Rabbit and Wolf |
+|  |
+| Programming class 2022 |
+|March 24, 2021|
+
+
+## I. Requirements
+
+1. What Was Wanted
+
+
+2. Input Information
+- the player will be able to use keys A, D, W, S, and [ESC]
+
+1.  Output Information
+- A - this always the player to move left
+- D - this always the player to move right
+- W - this always the player to move up
+- S - this always the player to move down
+- [ESC] - will pull up a Pause menu
+
+
+## II. Errors
+
+    1. 
+
+
+    COPY AND PASTE
+    **File**:  .cs : MonoBehaviour.cs
+
+**Attributes**
+
+         Name: 
+             Description: 
+             Type: 
+
+
+
+### III. Classes
+
+**File**:  AppearToPlayer.cs : MonoBehaviour.cs
+
+**Attributes**
+
+
+         Name: OnTriggerEnter(Collider other)
+             Description: activate the Mesh Renderer of the other object while player is in range
+             Type: private void
+         Name: OnTriggerExit(Collider other)
+             Description: when the player leaves the range, turn off mesh renderer
+             Type: private void
+
+**File**: CollectibleBehaviour.cs : MonoBehaviour.cs
+
+**Attributes**
+
+
+         Name: ResetCollectable()
+             Description: invokes ResetPosition() after _respawnTime is up
+             Type: public void
+         Name: ResetPosition()
+             Description: this transforms the position of the collectables
+             Type: private void
+         Name: OnTriggerEnter(Collider ther)
+             Description: adds value to game manager and moved collectible away from sight
+             Type: void
+
+    **File**:  ScoringSystem.cs : MonoBehaviour.cs
+
+**Attributes**
+ 
+
+         Name: Start()
+             Description: grabs the score text
+             Type: void
+         Name: Update()
+             Description: UI says the score and shows the current player score
+             Type: void
+
+    **File**:  Event.cs : MonoBehaviour.cs
+
+**Attributes**
+
+         Name: AddListener(IListener newListener)
+             Description: adds a listener to events list of listener
+             Type: public void
+         Name: 
+             Description: 
+             Type: 
+
+
+
+
+
