@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //adds a collectible to the collected list and updates score
     public static void AddCollectable(CollectibleBehaviour collectible)
     {
         collected.Add(collectible);

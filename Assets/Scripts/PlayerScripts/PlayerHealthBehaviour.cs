@@ -5,8 +5,12 @@ using UnityEngine;
 public class PlayerHealthBehaviour : MonoBehaviour
 {
     private int _lives;
+    public float _deathTimer = 0.0f;
     public int lifeLimit = 3;
-    public int playerDidDie = 0;
+    public bool playerDidDie = false;
+    public float playersMoveSpeed = 0.08f;
+    public float playersRotationSpeed = 1000;
+    public Controller Player; 
 
     public Rigidbody _body;
     public GameObject OverScreen;
@@ -27,6 +31,9 @@ public class PlayerHealthBehaviour : MonoBehaviour
         {
             //this adds a strike to health 
             _lives += 1;
+            Player.moveSpeed = 0;
+            Player.rotationSpeed = 0;
+            Invoke("PlayerPosition", 2f);
         }
     }
 
@@ -40,21 +47,22 @@ public class PlayerHealthBehaviour : MonoBehaviour
         }
     }
 
+    void PlayerPosition()
+    {
+        _deathTimer = 0;
+        transform.position = new Vector3(-1.5f, 1.84f, -7.07f);
+        Player.moveSpeed += playersMoveSpeed;
+        Player.rotationSpeed += playersRotationSpeed;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if(_lives == 1 && _lives == 2)
-        {
-            //resets player position
-            _body.position = new Vector3(-1, 2, -7);
-        }
         //we want to give the player 3 hits before game over
         if (_lives == lifeLimit)
         {
             //also temperary, used for testing
-            playerDidDie += 1;
-            //resets player position
-            _body.position = new Vector3(-1, 2, -7);
+            playerDidDie = true;
             //Game Over Screen
             GameOverScreen();
         }
