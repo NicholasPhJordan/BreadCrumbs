@@ -7782,6 +7782,7 @@ MonoBehaviour:
   _target: {fileID: 928661119}
   _runSpeed: 5
   _speedModifier: 0.05
+  _startTimer: 500
   _trackingTimer: 30
 --- !u!136 &441825134
 CapsuleCollider:
@@ -14488,8 +14489,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff3869472db17245a2c899dff127244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _deathTimer: 0
   lifeLimit: 3
   playerDidDie: 0
+  playersMoveSpeed: 0.08
+  playersRotationSpeed: 1000
+  Player: {fileID: 0}
   _body: {fileID: 0}
   OverScreen: {fileID: 0}
 --- !u!114 &928661122
@@ -32344,7 +32349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1862436561
 Light:
   m_ObjectHideFlags: 0
