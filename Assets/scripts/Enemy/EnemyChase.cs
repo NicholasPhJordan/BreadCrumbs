@@ -59,16 +59,10 @@ public class EnemyChase : MonoBehaviour
             //Reset the timer in case it was modified
             _timer = _trackingTimer;
 
-            //Decrease the run cooldown the more the enemy gets close to the player
-            if (_agent.remainingDistance < 3)
-            {
-                if (_trackingTimer >= 0)
-                    _trackingTimer -= 1;
-            }
 
             //If the agent's speed somehow drops below 1, catch it
-            if (_agent.speed < 1.5)
-                _agent.speed = 1.5f;
+            if (_agent.speed < 2)
+                _agent.speed = 2f;
         }
         //If the agent is outside the radius while still having a decreased speed
         else if (_agent.remainingDistance > 5 && _agent.speed < _runSpeed)
@@ -79,6 +73,10 @@ public class EnemyChase : MonoBehaviour
             //If the timer hits 0
             if (_timer <= 0)
             {
+                //Decrease the run cooldown
+                if (_trackingTimer >= 0)
+                    _trackingTimer -= 1;
+
                 //Reset the speed to usual
                 _agent.speed = _runSpeed;
                 //Reset the timer for next time
