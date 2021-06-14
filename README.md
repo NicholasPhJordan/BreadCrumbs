@@ -38,10 +38,15 @@ If you get hit by your enemies three times, its Game Over!
 > Perfume | Disperse Enemies
 > FireFlies | Shows Nearest Crumbs
 
+![Power Ups Design](Images/PowerUps.png)
+
 > **Enemies**  | **What They Do**
 > -------------------------|--------------------------------
 > Ghost | Temperaily slows down player
 > Raven | Moves power ups to random placments
+
+![Ghost Design](Images/Ghost.jpg)
+![Raven Design](Images/Raven.jpg)
 
 ###Where to Play
 You can play on a chrome tab on [itch.io][itchio].
