@@ -86,10 +86,51 @@
          Name: AddListener(IListener newListener)
              Description: adds a listener to events list of listener
              Type: public void
-         Name: 
-             Description: 
-             Type: 
+         Name: Raise(GameObject sender = null)
+             Description: calls invoke for every listener in the list
+             Type: public void
 
+    **File**:  GameEventListenerBehaviour.cs : MonoBehaviour.cs , IListener
+
+**Attributes**
+
+         Name: Start()
+             Description: adds a listener to event 
+             Type: void
+         Name: Invoke(GameObject Sender)
+             Description: checks if the listener is null and if so it activates
+             Type: public void
+
+    **File**:  LightBehaviours.cs : MonoBehaviour.cs
+
+**Attributes**
+
+         Name: Start()
+             Description: Calls the light component
+             Type: void
+         Name: Update()
+             Description: if powerLighting is false it sets light to max but if true sets light to min
+             Type: void
+
+    **File**:  LightBottleBehaviour.cs : MonoBehaviour.cs
+
+**Attributes**
+
+         Name: Start()
+             Description: grabs components from the start 
+             Type: void
+         Name: OnCollisionEnter(Collision)
+             Description: this will tell what happens to an object when colliding
+             Type: private void
+         Name: LightEnumerator()
+             Description: does a coroutine for lights increase range
+             Type: IEnumerator
+         Name: WaitAndChange(float waitTime)
+             Description: waits for waitTime before continuing 
+             Type: IEnumerator
+         Name: Update()
+             Description: this will continusly update and if collision has happened and what it should do
+             Type: private void
 
 
 
