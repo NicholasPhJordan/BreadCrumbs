@@ -14495,6 +14495,9 @@ MonoBehaviour:
   playerDidDie: 0
   playersMoveSpeed: 0.08
   playersRotationSpeed: 1000
+  playerResetX: 0
+  playerResetY: 0
+  playerResetZ: 0
   Player: {fileID: 0}
   _body: {fileID: 0}
   OverScreen: {fileID: 0}
@@ -23762,7 +23765,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1409898182}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
