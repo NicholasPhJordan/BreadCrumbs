@@ -10,6 +10,9 @@ public class PlayerHealthBehaviour : MonoBehaviour
     public bool playerDidDie = false;
     public float playersMoveSpeed = 0.08f;
     public float playersRotationSpeed = 1000;
+    public float playerResetX = 0.0f;
+    public float playerResetY = 0.0f;
+    public float playerResetZ = 0.0f;
     public Controller Player; 
 
     public Rigidbody _body;
@@ -50,7 +53,7 @@ public class PlayerHealthBehaviour : MonoBehaviour
     void PlayerPosition()
     {
         _deathTimer = 0;
-        transform.position = new Vector3(-1.5f, 1.84f, -7.07f);
+        transform.position = new Vector3(playerResetX, playerResetY, playerResetZ);
         Player.moveSpeed += playersMoveSpeed;
         Player.rotationSpeed += playersRotationSpeed;
     }
