@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: f71b1326f222f0c4dad37a372d035f47,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -10609,7 +10609,7 @@ Transform:
   - {fileID: 7752814152332316404}
   - {fileID: 1144270685}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5013162183496570833
 GameObject:
@@ -18588,7 +18588,7 @@ PrefabInstance:
     - target: {fileID: 8825585827489191970, guid: 4669fe94eb791404681653627bf84cc8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8825585827489191970, guid: 4669fe94eb791404681653627bf84cc8,
         type: 3}
