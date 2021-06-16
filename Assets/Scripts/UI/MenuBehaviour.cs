@@ -12,14 +12,6 @@ public class MenuBehaviour : MonoBehaviour
     public static bool GamePaused = false;
     public Animator transition;
 
-    //loads the next scene for the Start button
-    public void PlayGame()
-    {
-        StartCoroutine(
-            LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
-        
-    }
-
     //changes scene with the fade transition =
     public IEnumerator LoadLevel(int levelIndex)
     {
@@ -31,23 +23,10 @@ public class MenuBehaviour : MonoBehaviour
         SceneManager.LoadScene(levelIndex);
     }
 
-    //Quites and closes the game
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
-
-    public void QuitToTitle()
-    {
-        _gameOverUI.SetActive(false);
-        GameManager._gameOver = false;
-        StartCoroutine(
-            LoadLevel(0));
-    }
-
     //Update is called once per frame
     private void Update()
     {
+        //only detect esc if in game scene
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
@@ -63,10 +42,25 @@ public class MenuBehaviour : MonoBehaviour
             }
         }
 
-        if(GameManager._gameOver) 
-        { 
-            _gameOverUI.SetActive(true);
+        //when player dies, go to GameOver scene
+        if (GameManager.gameOver)
+        {
+            StartCoroutine(LoadLevel(2));
+            GameManager.SetGameOver = false;
         }
+    }
+
+    //loads the next scene for the Start button
+    public void PlayGame()
+    {
+        StartCoroutine(
+            LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+    }
+
+    //Quites and closes the game
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
     //Unpauses game and closes UI
@@ -83,5 +77,19 @@ public class MenuBehaviour : MonoBehaviour
         _pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GamePaused = true;
+    }
+
+    //Brings the player back to the title screen
+    public void QuitToTitle()
+    {
+        Time.timeScale = 1f;
+        GamePaused = false;
+        StartCoroutine(LoadLevel(0));
+    }
+
+    //Brings the player back to the Game Scene 
+    public void Restart()
+    {
+        StartCoroutine(LoadLevel(1));
     }
 }

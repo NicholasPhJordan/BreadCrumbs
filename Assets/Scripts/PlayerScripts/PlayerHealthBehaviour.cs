@@ -1,18 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealthBehaviour : MonoBehaviour
 {
     public int _lives;
     public float _deathTimer = 0.0f;
     public int lifeLimit = 3;
+    public bool GameOver = false;
     public float playersMoveSpeed = 0.08f;
     public float playersRotationSpeed = 1000;
     public Controller Player; 
-
     public Rigidbody _body;
-    public GameObject OverScreen;
+
+
+    [SerializeField]
+    private Image[] _life;
 
     //varible to hold player starting position
     private Vector3 homePosition;
@@ -38,6 +42,7 @@ public class PlayerHealthBehaviour : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             //this adds a strike to health 
+            _life[_lives].enabled = false;
             _lives += 1;
             Player.moveSpeed = 0;
             Player.rotationSpeed = 0;
@@ -61,9 +66,13 @@ public class PlayerHealthBehaviour : MonoBehaviour
         if (_lives == lifeLimit)
         {
             //sets gameOver to true
-            GameManager._gameOver = true;
+            GameManager.SetGameOver = true;
+            GameOver = true;
         }
         else if (_lives > lifeLimit)
+        {
             _lives = 0;
+            GameManager.SetGameOver = false;
+        }
     }
 }
