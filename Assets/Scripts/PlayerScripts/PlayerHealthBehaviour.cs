@@ -11,9 +11,6 @@ public class PlayerHealthBehaviour : MonoBehaviour
     public bool GameOver = false;
     public float playersMoveSpeed = 0.08f;
     public float playersRotationSpeed = 1000;
-    public float playerResetX = 0.0f;
-    public float playerResetY = 0.0f;
-    public float playerResetZ = 0.0f;
     public Controller Player; 
     public Rigidbody _body;
 
