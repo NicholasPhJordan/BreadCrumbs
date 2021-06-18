@@ -13,6 +13,12 @@ public class GameManager : MonoBehaviour
     private int _collectAmount;
     public static bool gameOver = false;
     private static int _playerScore;
+    private static int _round;
+
+    public static int Round
+    {
+        get { return _round; }
+    }
 
     public static int PlayerScore
     {
@@ -25,6 +31,13 @@ public class GameManager : MonoBehaviour
         set { gameOver = value; }
     }
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        _playerScore = 0;
+        _round = 0;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -32,6 +45,7 @@ public class GameManager : MonoBehaviour
         {
             _onCollected?.Raise(gameObject);
             collected.Clear();
+            _round += 1;
         }
 
     }

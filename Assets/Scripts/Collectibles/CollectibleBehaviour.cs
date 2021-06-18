@@ -10,17 +10,10 @@ public class CollectibleBehaviour : MonoBehaviour
     public int _scoreAmount;
     [SerializeField]
     private float _respawnTime;
-    private static int _round;
-
-    public static int Round
-    {
-        get { return _round; }
-    }
 
     //resets the collectibles position after set amount of time and increases round counter
     public void ResetCollectible()
     {
-        _round += 1;
         Invoke("ResetPosition", _respawnTime);
     }
 

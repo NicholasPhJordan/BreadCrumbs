@@ -54,7 +54,7 @@ public class MenuBehaviour : MonoBehaviour
     public void PlayGame()
     {
         StartCoroutine(
-            LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+            LoadLevel(1));
     }
 
     //Quites and closes the game

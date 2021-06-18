@@ -20,15 +20,13 @@ public class ScoringSystem : MonoBehaviour
     {
         if (_highScore < _playerScore)
             _highScore = _playerScore;
-        _playerScore = 0;
-        _round = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         _playerScore = GameManager.PlayerScore;
-        _round = CollectibleBehaviour.Round;
+        _round = GameManager.Round;
 
         _scoreText.text = "Score " + _playerScore;
         _highScoreText.text = "High Score      " + _highScore;
