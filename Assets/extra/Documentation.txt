@@ -1,0 +1,143 @@
+| Cailey Marie Bianchini|
+| :---          	|
+| Hunter, Rabbit and Wolf |
+|  |
+| Programming class 2022 |
+|March 24, 2021|
+
+
+## I. Requirements
+
+1. What Was Wanted
+
+
+2. Input Information
+- the player will be able to use keys A, D, W, S, and [ESC]
+
+1.  Output Information
+- A - this always the player to move left
+- D - this always the player to move right
+- W - this always the player to move up
+- S - this always the player to move down
+- [ESC] - will pull up a Pause menu
+
+
+## II. Errors
+
+    1. 
+
+
+    COPY AND PASTE
+    **File**:  .cs : MonoBehaviour.cs
+
+**Attributes**
+
+         Name: 
+             Description: 
+             Type: 
+
+
+
+### III. Classes
+
+**File**:  AppearToPlayer.cs : MonoBehaviour.cs
+
+**Attributes**
+
+
+         Name: OnTriggerEnter(Collider other)
+             Description: activate the Mesh Renderer of the other object while player is in range
+             Type: private void
+         Name: OnTriggerExit(Collider other)
+             Description: when the player leaves the range, turn off mesh renderer
+             Type: private void
+
+**File**: CollectibleBehaviour.cs : MonoBehaviour.cs
+
+**Attributes**
+
+
+         Name: ResetCollectable()
+             Description: invokes ResetPosition() after _respawnTime is up
+             Type: public void
+         Name: ResetPosition()
+             Description: this transforms the position of the collectables
+             Type: private void
+         Name: OnTriggerEnter(Collider ther)
+             Description: adds value to game manager and moved collectible away from sight
+             Type: void
+
+    **File**:  ScoringSystem.cs : MonoBehaviour.cs
+
+**Attributes**
+ 
+
+         Name: Start()
+             Description: grabs the score text
+             Type: void
+         Name: Update()
+             Description: UI says the score and shows the current player score
+             Type: void
+
+    **File**:  Event.cs : MonoBehaviour.cs
+
+**Attributes**
+
+         Name: AddListener(IListener newListener)
+             Description: adds a listener to events list of listener
+             Type: public void
+         Name: Raise(GameObject sender = null)
+             Description: calls invoke for every listener in the list
+             Type: public void
+
+    **File**:  GameEventListenerBehaviour.cs : MonoBehaviour.cs , IListener
+
+**Attributes**
+
+         Name: Start()
+             Description: adds a listener to event 
+             Type: void
+         Name: Invoke(GameObject Sender)
+             Description: checks if the listener is null and if so it activates
+             Type: public void
+
+    **File**:  LightBehaviours.cs : MonoBehaviour.cs
+
+**Attributes**
+
+         Name: Start()
+             Description: Calls the light component
+             Type: void
+         Name: Update()
+             Description: if powerLighting is false it sets light to max but if true sets light to min
+             Type: void
+
+    **File**:  LightBottleBehaviour.cs : MonoBehaviour.cs
+
+**Attributes**
+
+         Name: Start()
+             Description: grabs components from the start 
+             Type: void
+         Name: OnCollisionEnter(Collision)
+             Description: this will tell what happens to an object when colliding
+             Type: private void
+         Name: LightEnumerator()
+             Description: does a coroutine for lights increase range
+             Type: IEnumerator
+         Name: WaitAndChange(float waitTime)
+             Description: waits for waitTime before continuing 
+             Type: IEnumerator
+         Name: Update()
+             Description: this will continusly update and if collision has happened and what it should do
+             Type: private void
+
+    **File**:  .cs : MonoBehaviour.cs
+
+**Attributes**
+
+         Name: 
+             Description: 
+             Type: 
+
+
