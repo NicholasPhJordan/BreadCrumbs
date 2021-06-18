@@ -11,11 +11,13 @@ public class CollectibleBehaviour : MonoBehaviour
     [SerializeField]
     private float _respawnTime;
 
+    //resets the collectibles position after set amount of time and increases round counter
     public void ResetCollectible()
     {
         Invoke("ResetPosition", _respawnTime);
     }
 
+    //resets the collectibles position
     private void ResetPosition()
     {
         transform.position =

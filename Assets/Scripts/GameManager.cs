@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,17 +11,31 @@ public class GameManager : MonoBehaviour
     [Tooltip("The amount the player must collect to reset Collectibles")]
     [SerializeField]
     private int _collectAmount;
+    public static bool gameOver = false;
     private static int _playerScore;
+    private static int _round;
+
+    public static int Round
+    {
+        get { return _round; }
+    }
 
     public static int PlayerScore
     {
         get { return _playerScore; }
     }
 
+    public static bool SetGameOver
+    {
+        get { return gameOver; }
+        set { gameOver = value; }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        _playerScore = 0;
+        _round = 0;
     }
 
     // Update is called once per frame
@@ -30,7 +45,9 @@ public class GameManager : MonoBehaviour
         {
             _onCollected?.Raise(gameObject);
             collected.Clear();
+            _round += 1;
         }
+
     }
 
     //adds a collectible to the collected list and updates score
@@ -38,7 +55,6 @@ public class GameManager : MonoBehaviour
     {
         collected.Add(collectible);
         _playerScore += collectible._scoreAmount;
-        Debug.Log(collected.Count);
     }
 
 }
