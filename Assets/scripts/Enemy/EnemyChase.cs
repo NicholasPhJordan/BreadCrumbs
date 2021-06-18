@@ -27,8 +27,9 @@ public class EnemyChase : MonoBehaviour
     private Vector3 _homePosition;
     private Vector3 _pursuitDestination;
     private Vector3 _targetLastPosition;
-
     private bool _isCuttingOff;
+
+    private int randomNumber;
 
     public GameObject TargetInUse
     {
@@ -152,5 +153,14 @@ public class EnemyChase : MonoBehaviour
     {
         _targetLastPosition = _targetInUse.transform.position;
         yield return new WaitForSeconds(1.5f);
+    }
+
+    private int StartingTimerRandomizer()
+    {
+        randomNumber = Random.Range(0, 5);
+
+
+
+        return 1;
     }
 }
