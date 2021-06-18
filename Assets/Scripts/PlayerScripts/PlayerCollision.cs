@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter(Collision collision)
     {
-        
-    }
+        if (collision.gameObject.CompareTag("Player"))
+        {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            Rigidbody rbdy = collision.gameObject.GetComponent<Rigidbody>();
+
+            //Stop Moving/Translating
+            rbdy.velocity = Vector3.zero;
+
+            //Stop rotating
+            rbdy.angularVelocity = Vector3.zero;
+        }
     }
 }
