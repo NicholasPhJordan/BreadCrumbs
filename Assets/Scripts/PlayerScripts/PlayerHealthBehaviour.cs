@@ -44,6 +44,7 @@ public class PlayerHealthBehaviour : MonoBehaviour
         //the enemy will hold the "Enemy" tag
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            Debug.Log("has collided");
             //this adds a strike to health 
             _life[_lives].enabled = false;
             _lives += 1;
