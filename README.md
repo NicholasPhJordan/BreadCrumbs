@@ -52,5 +52,5 @@ If you get hit by your enemies three times, its Game Over!
 You can play on a chrome tab on [itch.io][itchio].
 You can also download the .exe in Releases in our github site [here][github.exe].
 
-[itchio]:https://itch.io/
+[itchio]: https://gluttonproductions.itch.io/bread-crumbs
 [github.exe]:https://github.com/NicholasPhJordan/BreadCrumbs/releases
