@@ -14,6 +14,8 @@ public class LightBottleBehaviour : MonoBehaviour
     public float minbrightness = 35;
     //power up light range
     public float maxBrightness = 50;
+    //light range current
+    public float currentBrightness;
     //the sets to tranform between ranges
     public float lightTimer = 10;
     private float _brightenRate = 0.5f;
@@ -30,6 +32,7 @@ public class LightBottleBehaviour : MonoBehaviour
         //grabs the components needed 
         _light1 = GetComponentInChildren<Light>();
         _rigidbody = GetComponent<Rigidbody>();
+        currentBrightness = _light1.range;
     }
 
     //this will tell what happens to an object when colliding
@@ -41,45 +44,28 @@ public class LightBottleBehaviour : MonoBehaviour
         }
     }
 
-    IEnumerator LightEnumerator()
-    {
-        // - After 0 seconds, prints "Starting 0.0"
-        // - After 2 seconds, prints "WaitAndPrint 2.0"
-        // - After 2 seconds, prints "Done 2.0"
-        StartCoroutine("WaitAndChange", waitTime);
-        _light1.range = Mathf.Lerp(minbrightness, waitTime, lightTimer);
-        yield return new WaitForSeconds(1);
-        // Start function WaitAndPrint as a coroutine. And wait until it is completed.
-        // the same as yield return WaitAndPrint(2.0f);
-        StopCoroutine("WaitAndChange");
-    }
-
-    // suspend execution for waitTime seconds
-    IEnumerator WaitAndChange(float waitTime)
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(waitTime);
-        }
-    }
-
     private void Update()
     {
         //this is a timer that will only only count down when collided = true
         if (_collided == true)
         {
-            timeLeft -= Time.deltaTime;
-            _light1.range = Mathf.Lerp(minbrightness, maxBrightness, lightTimer);
+            _light1.range = Mathf.Lerp(currentBrightness, maxBrightness, lightTimer);
             //increases interloper
             lightTimer += _brightenRate * Time.deltaTime;
+            if (currentBrightness == maxBrightness)
+            {
+                timeLeft -= Time.deltaTime;
+            }
         }
         else
         {
             //this sets the lights range value to be bigger then normal
-            _light1.range = Mathf.Lerp(maxBrightness, minbrightness, lightTimer);
+            _light1.range = Mathf.Lerp(currentBrightness, minbrightness, lightTimer);
             //increases interloper
             lightTimer += _brightenRate * Time.deltaTime;
         }
+
+        currentBrightness = _light1.range;
 
         //checks if the time value is 0
         if (timeLeft <= 0)
