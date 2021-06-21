@@ -58,7 +58,17 @@ public class EnemyChase : MonoBehaviour
         }
         set
         {
-            _agent.transform.position = _homePosition;
+            _agent.transform.position = value;
+        }
+    }
+
+    public Vector3 EnemyHomePosition
+    {
+        //The property referencing the enemy's home position
+
+        get
+        {
+            return _homePosition;
         }
     }
 
