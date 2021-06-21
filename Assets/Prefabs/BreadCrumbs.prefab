@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scoreAmount: 10
-  _respawnTime: 1
+  _respawnTime: 2
 --- !u!1 &7496992945260727053
 GameObject:
   m_ObjectHideFlags: 0
