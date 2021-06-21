@@ -14,7 +14,6 @@ public class PlayerHealthBehaviour : MonoBehaviour
     public Controller Player; 
     public Rigidbody _body;
 
-
     [SerializeField]
     private Image[] _life;
 
@@ -43,7 +42,7 @@ public class PlayerHealthBehaviour : MonoBehaviour
         {
             Debug.Log("has collided");
             //this adds a strike to health 
-            _life[_lives].enabled = false;
+            _life[_lives].enabled = false; //This disables the image at the index of _lives
             _lives += 1;
             Player.moveSpeed = 0;
             Player.rotationSpeed = 0;
