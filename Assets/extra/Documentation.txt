@@ -1,15 +1,23 @@
+>Programmers
 | Cailey Marie Bianchini|
+| Josh|
+| Nick|
+>VFX
+|Michal|
+>Artist
+| Kenshie|
+| Nathen Aytona|
 | :---          	|
-| Hunter, Rabbit and Wolf |
+| BreadCrumbs |
 |  |
-| Programming class 2022 |
-|March 24, 2021|
+| class 2022 |
+|June 25, 2021|
 
 
 ## I. Requirements
 
 1. What Was Wanted
-
+A Game that added more to arcade games.
 
 2. Input Information
 - the player will be able to use keys A, D, W, S, and [ESC]
@@ -25,17 +33,6 @@
 ## II. Errors
 
     1. 
-
-
-    COPY AND PASTE
-    **File**:  .cs : MonoBehaviour.cs
-
-**Attributes**
-
-         Name: 
-             Description: 
-             Type: 
-
 
 
 ### III. Classes
@@ -67,7 +64,7 @@
              Description: adds value to game manager and moved collectible away from sight
              Type: void
 
-    **File**:  ScoringSystem.cs : MonoBehaviour.cs
+**File**:  ScoringSystem.cs : MonoBehaviour.cs
 
 **Attributes**
  
@@ -79,7 +76,7 @@
              Description: UI says the score and shows the current player score
              Type: void
 
-    **File**:  Event.cs : MonoBehaviour.cs
+**File**:  Event.cs : MonoBehaviour.cs
 
 **Attributes**
 
@@ -90,7 +87,7 @@
              Description: calls invoke for every listener in the list
              Type: public void
 
-    **File**:  GameEventListenerBehaviour.cs : MonoBehaviour.cs , IListener
+**File**:  GameEventListenerBehaviour.cs : MonoBehaviour.cs , IListener
 
 **Attributes**
 
@@ -101,7 +98,7 @@
              Description: checks if the listener is null and if so it activates
              Type: public void
 
-    **File**:  LightBehaviours.cs : MonoBehaviour.cs
+**File**:  LightBehaviours.cs : MonoBehaviour.cs
 
 **Attributes**
 
@@ -112,7 +109,7 @@
              Description: if powerLighting is false it sets light to max but if true sets light to min
              Type: void
 
-    **File**:  LightBottleBehaviour.cs : MonoBehaviour.cs
+**File**:  LightBottleBehaviour.cs : MonoBehaviour.cs
 
 **Attributes**
 
@@ -132,12 +129,92 @@
              Description: this will continusly update and if collision has happened and what it should do
              Type: private void
 
-    **File**:  .cs : MonoBehaviour.cs
+**File**:  PlayerHealthBehaviour.cs : MonoBehaviour.cs
 
 **Attributes**
 
-         Name: 
-             Description: 
-             Type: 
+         Name: Start()
+             Description: This wmakes sure that each time this scene is called it resets health to 0.
+             Type: void
+         Name: OnCollisionEnter(Collision collision)
+             Description: this will check to see if player collided with an object with a tag "Enemy"
+             Type: private void
+         Name: GameOverScreen()
+             Description: this will check if gameover screen is true or not and set it active
+             Type: public void
+         Name: PlayerPosition()
+             Description: this resets values and player position to origin point
+             Type: void
+         Name: Update()
+             Description: this will check players _lives and decides if to give a game over or not
+             Type: void
 
+**File**:  Controller.cs : MonoBehaviour.cs
 
+**Attributes**
+
+         Name: Start()
+             Description: Grabs components towards the start of the scene 
+             Type: void
+         Name: FixedUpdate()
+             Description: this will grab the values of the users inputed controls to move the player
+             Type: private void
+
+    **File**:  InputControl.cs : MonoBehaviour.cs
+
+**Attributes**
+
+         Name: Awake()
+             Description: makes the value of the controls be able to be grabable
+             Type: private void
+         Name: OnEnable()
+             Description: this grabs the value of the controls from the settings 
+             Type: private void
+         Name: OnMovedPerformed(InputAction.CallbackContext context)
+             Description: reads the values of the inputs and allows events to be called
+             Type: private void
+
+ **File**:  PlayerMovementBehaviour.cs : MonoBehaviour.cs
+
+**Attributes**
+
+         Name: Start()
+             Description: grabs the value of the rigidbody component at the start of the scene 
+             Type: void
+         Name: Move(Vector3 direction)
+             Description: adds the value of direction, speed and real time to velocity
+             Type: public void
+         Name: FixedUpdate()
+             Description: this updates every frame and moved the position of the rigidbody
+             Type: void
+
+ **File**:  ButtonColorChange.cs : MonoBehaviour.cs, IPointerEnterHandler, IPointerExitHandler
+
+**Attributes**
+
+         Name: OnPointerEnter(PointerEventData eventData)
+             Description: changed the text to red when mouse is hovering over button
+             Type: public void
+         Name: OnPointerExit(PointerEventData eventData)
+             Description: changed the tect to black when mouse isnt hovering over button
+             Type: public void
+
+ **File**:  MenuBehaviour.cs : MonoBehaviour.cs
+
+**Attributes**
+
+         Name: PlayGame()
+             Description: loads the next scene for the start button
+             Type: public void
+         Name: QuiteGame()
+             Description: this closes the game when called
+             Type: public void
+         Name: Update()
+             Description: checks if screen manager is active and checks other facters each frame
+             Type: private void
+         Name: Resume()
+             Description: unpauseses the game and closes UI 
+             Type: public void
+         Name: Pause()
+             Description: pauses the game and open UI
+             Type: void
