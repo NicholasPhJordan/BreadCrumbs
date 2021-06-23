@@ -13613,7 +13613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _onCollected: {fileID: 11400000, guid: 1cca1dede308c5740ac492b058a97911, type: 2}
-  _collectAmount: 56
+  _collectAmount: 42
 --- !u!1 &8825585827684155777
 GameObject:
   m_ObjectHideFlags: 0
