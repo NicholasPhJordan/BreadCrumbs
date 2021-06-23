@@ -13599,7 +13599,10 @@ MonoBehaviour:
   playersRotationSpeed: 1000
   Player: {fileID: 8825585827489191968}
   _body: {fileID: 8825585827489191966}
-  _life: []
+  _life:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &7143852557989168210
 MonoBehaviour:
   m_ObjectHideFlags: 0
