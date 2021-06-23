@@ -9,7 +9,7 @@ public class PlayerHealthBehaviour : MonoBehaviour
     public float _deathTimer = 0.0f;
     public int lifeLimit = 3;
     public bool GameOver = false;
-    public float playersMoveSpeed = 0.08f;
+    public float playersMoveSpeed = 0.05f;
     public float playersRotationSpeed = 1000;
     public Controller Player; 
     public Rigidbody _body;
