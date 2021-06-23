@@ -13558,7 +13558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e0380e0c07acf845ab4668610abafd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.08
+  moveSpeed: 0.05
   rotationSpeed: 1000
 --- !u!114 &8825585827489191969
 MonoBehaviour:
@@ -13595,7 +13595,7 @@ MonoBehaviour:
   _deathTimer: 0
   lifeLimit: 3
   GameOver: 0
-  playersMoveSpeed: 0.08
+  playersMoveSpeed: 0.05
   playersRotationSpeed: 1000
   Player: {fileID: 8825585827489191968}
   _body: {fileID: 8825585827489191966}
