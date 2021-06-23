@@ -1,20 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ClawAnimation : MonoBehaviour
 {
     [SerializeField]
-    private Animator claw;
+    private Image _claw;
+
+    private int _alpha;
 
     // Start is called before the first frame update
     void Start()
     {
-        claw = GetComponent<Animator>();
+
     }
 
-    public void OnAttack()
+    void OnAttack()
     {
-        claw.Play("Attack");
+        _claw.color.a = Mathf.Lerp(0, 255, 30);
     }
 }
