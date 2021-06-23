@@ -216,4 +216,30 @@ public class EnemyChase : MonoBehaviour
 
         return 1;
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        //If it collides with the player
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            //Invoke the position reset function
+            Invoke("EnemyPositionReset", 2.5f);
+        }
+    }
+
+    void EnemyPositionReset()
+    {
+        //Reset the game, with the starting timer significantly less than before, but still enough
+        _startTimer = StartingTimerRandomizer() / 5;
+
+        //Return its behavior to the starting behavior
+        _isCuttingOff = true;
+        //Reset the speed
+        _agent.speed = 0;
+        //Reset the timer
+        _timer = _trackingTimer;
+
+        //Return the enemy to its home position
+        EnemyPosition = EnemyHomePosition;
+    }
 }
