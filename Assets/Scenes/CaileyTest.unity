@@ -122,6 +122,26 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &18260429 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8825585827489191974, guid: 4669fe94eb791404681653627bf84cc8,
+    type: 3}
+  m_PrefabInstance: {fileID: 8825585826570373823}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &18260433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18260429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c044a4a5b1db67d4bb027eae5f63a73b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0.05
+  rotationSpeed: 1000
 --- !u!1 &906965021
 GameObject:
   m_ObjectHideFlags: 0
@@ -18971,6 +18991,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8825585826336072910, guid: 4669fe94eb791404681653627bf84cc8,
+        type: 3}
+      propertyPath: moveInputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 18260433}
     - target: {fileID: 8825585827489191966, guid: 4669fe94eb791404681653627bf84cc8,
         type: 3}
       propertyPath: m_IsKinematic
@@ -19056,7 +19081,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8825585827489191968, guid: 4669fe94eb791404681653627bf84cc8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4669fe94eb791404681653627bf84cc8, type: 3}
 --- !u!1 &8827120636023568851
 GameObject:
