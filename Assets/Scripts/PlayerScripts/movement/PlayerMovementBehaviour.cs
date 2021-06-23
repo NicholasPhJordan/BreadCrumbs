@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerMovementBehaviour : MonoBehaviour
 {
-    [Tooltip("How fast the p[layer will move.")]
+    [Tooltip("How fast the player will move.")]
     [SerializeField]
     private float _moveSpeed;
     [Tooltip("This grabs the wanted actors body value")]

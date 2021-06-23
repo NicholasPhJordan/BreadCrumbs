@@ -9,11 +9,10 @@ public class PlayerHealthBehaviour : MonoBehaviour
     public float _deathTimer = 0.0f;
     public int lifeLimit = 3;
     public bool GameOver = false;
-    public float playersMoveSpeed = 0.08f;
+    public float playersMoveSpeed = 0.05f;
     public float playersRotationSpeed = 1000;
     public Controller Player; 
     public Rigidbody _body;
-
 
     [SerializeField]
     private Image[] _life;
@@ -43,7 +42,7 @@ public class PlayerHealthBehaviour : MonoBehaviour
         {
             Debug.Log("has collided");
             //this adds a strike to health 
-            _life[_lives].enabled = false;
+            _life[_lives].enabled = false; //This disables the image at the index of _lives
             _lives += 1;
             Player.moveSpeed = 0;
             Player.rotationSpeed = 0;

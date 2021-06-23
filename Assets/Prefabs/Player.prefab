@@ -13599,7 +13599,10 @@ MonoBehaviour:
   playersRotationSpeed: 1000
   Player: {fileID: 8825585827489191968}
   _body: {fileID: 8825585827489191966}
-  _life: []
+  _life:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &7143852557989168210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13613,7 +13616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _onCollected: {fileID: 11400000, guid: 1cca1dede308c5740ac492b058a97911, type: 2}
-  _collectAmount: 56
+  _collectAmount: 42
 --- !u!1 &8825585827684155777
 GameObject:
   m_ObjectHideFlags: 0
