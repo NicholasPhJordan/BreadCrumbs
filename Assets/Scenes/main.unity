@@ -7643,6 +7643,11 @@ PrefabInstance:
       propertyPath: _life.Array.data[2]
       value: 
       objectReference: {fileID: 450406942}
+    - target: {fileID: 8825585827489191965, guid: 4669fe94eb791404681653627bf84cc8,
+        type: 3}
+      propertyPath: playersMoveSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 8825585827489191966, guid: 4669fe94eb791404681653627bf84cc8,
         type: 3}
       propertyPath: m_IsKinematic
