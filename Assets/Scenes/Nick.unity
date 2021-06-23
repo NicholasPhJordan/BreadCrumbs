@@ -8396,6 +8396,11 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 8825585827489191966, guid: 4669fe94eb791404681653627bf84cc8,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8825585827489191968, guid: 4669fe94eb791404681653627bf84cc8,
         type: 3}
       propertyPath: moveSpeed
@@ -8454,6 +8459,11 @@ PrefabInstance:
     - target: {fileID: 8825585827489191970, guid: 4669fe94eb791404681653627bf84cc8,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825585827489191973, guid: 4669fe94eb791404681653627bf84cc8,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8825585827489191974, guid: 4669fe94eb791404681653627bf84cc8,
@@ -11090,6 +11100,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1503900261792483674, guid: 5063c8f57909b854e8888b08ef851531,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503900261792483674, guid: 5063c8f57909b854e8888b08ef851531,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503900261792483674, guid: 5063c8f57909b854e8888b08ef851531,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1522941352389480554, guid: 5063c8f57909b854e8888b08ef851531,
         type: 3}
       propertyPath: m_Layer
@@ -11293,7 +11318,7 @@ PrefabInstance:
     - target: {fileID: 3463958029990842159, guid: 5063c8f57909b854e8888b08ef851531,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3549404955755514227, guid: 5063c8f57909b854e8888b08ef851531,
         type: 3}
@@ -11353,7 +11378,7 @@ PrefabInstance:
     - target: {fileID: 4189196137900069814, guid: 5063c8f57909b854e8888b08ef851531,
         type: 3}
       propertyPath: m_Radius
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4196472252250594968, guid: 5063c8f57909b854e8888b08ef851531,
         type: 3}
