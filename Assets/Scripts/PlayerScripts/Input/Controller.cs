@@ -12,11 +12,6 @@ public class Controller : MonoBehaviour
 
     private Rigidbody _body;
 
-    private float getSpeed
-    {
-        get { return moveSpeed; }
-    }
-
     void Start()
     {
         //grabs the light component to allow change
