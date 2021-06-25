@@ -41,6 +41,7 @@ public class PlayerHealthBehaviour : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("has collided");
+            ClawAnimation.OnAttack();
             //this adds a strike to health 
             _life[_lives].enabled = false; //This disables the image at the index of _lives
             _lives += 1;

@@ -8,16 +8,14 @@ public class ClawAnimation : MonoBehaviour
     [SerializeField]
     private Image _claw;
 
-    private int _alpha;
-
     // Start is called before the first frame update
     void Start()
     {
-
+        _claw = GetComponent<Image>();
     }
 
-    void OnAttack()
+    public static void OnAttack()
     {
-        _claw.color.a = Mathf.Lerp(0, 255, 30);
+        _claw.color = new Color(_claw.color.r, _claw.color.g, _claw.color.b, 1f);
     }
 }
