@@ -3,7 +3,42 @@ guid: fb7a3a2e43da54a49a672f7467dd5c6d
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyes
+    second: {fileID: 2100000, guid: 58037101ed5f32e48bba6ad4e86fd8d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hair
+    second: {fileID: 2100000, guid: 58037101ed5f32e48bba6ad4e86fd8d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hood
+    second: {fileID: 2100000, guid: 58037101ed5f32e48bba6ad4e86fd8d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shirt
+    second: {fileID: 2100000, guid: 58037101ed5f32e48bba6ad4e86fd8d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shoe
+    second: {fileID: 2100000, guid: 58037101ed5f32e48bba6ad4e86fd8d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skeen
+    second: {fileID: 2100000, guid: 58037101ed5f32e48bba6ad4e86fd8d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skirt
+    second: {fileID: 2100000, guid: 58037101ed5f32e48bba6ad4e86fd8d8, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
