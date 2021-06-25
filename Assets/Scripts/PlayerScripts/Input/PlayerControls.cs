@@ -84,7 +84,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""WASD"",
+                    ""name"": ""GameStick"",
                     ""id"": ""25afc101-2bd8-430e-a983-b74605e603ea"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
